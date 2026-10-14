@@ -18,10 +18,19 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "definitions.h"
+#include "OLED_driver.h"
+#include "ctrldFM.h"
+#include "TORIEL.h"
 
+
+//CHECKLIST 
+// Wednesday - Make sure I'm able to print out all the letters and the pitch conversion works
+// Thursday - Get the YIN stuff working, get a case from Claude or something
+// Friday - Get the fucking ADC working (Somehow find the time), THE MORNING!
+//
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -47,6 +56,7 @@ I2C_HandleTypeDef hi2c1;
 
 /* USER CODE BEGIN PV */
 
+uint8_t framebuffer[SSD1306_BUF_LEN];
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -61,8 +71,6 @@ static void MX_I2C1_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
-/* USER CODE END 0 */
 
 /**
   * @brief  The application entry point.
@@ -97,7 +105,19 @@ int main(void)
   MX_ADC1_Init();
   MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
+  oled_init(&hi2c1);
+  setHorizontalMode(&hi2c1);
+  setPageAndColumnAddress(0, 7, 0, 127, &hi2c1);
+  for (unsigned int i = 0; i < SSD1306_BUF_LEN; i++){
+    framebuffer[i] = 0x00;
+  }
 
+  clearScreen(&hi2c1);
+  //set_pixel(64, 32, true, framebuffer);
+  
+//    printBitmap((64 - 22), (32 - 25), TORIEL_WIDTH, TORIEL_HEIGHT, TORIEL_SIZE, TORIEL_MAP,framebuffer);
+//    printText(0, 20, 16, "ABCDEFG#12345", FONT, framebuffer);
+  printPitch(framebuffer, sizeof(framebuffer), 440);
   /* USER CODE END 2 */
 
   /* Initialize leds */
@@ -108,9 +128,10 @@ int main(void)
   while (1)
   {
 
+    update(framebuffer, sizeof(framebuffer), &hi2c1);
+    HAL_Delay(1000);
     /* USER CODE END WHILE */
-
-    /* USER CODE BEGIN 3 */
+       /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
 }
@@ -119,6 +140,9 @@ int main(void)
   * @brief System Clock Configuration
   * @retval None
   */
+
+
+
 void SystemClock_Config(void)
 {
   RCC_OscInitTypeDef RCC_OscInitStruct = {0};

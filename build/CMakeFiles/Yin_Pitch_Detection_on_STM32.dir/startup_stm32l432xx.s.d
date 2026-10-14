@@ -1,0 +1,2 @@
+CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/startup_stm32l432xx.s.obj: \
+ /home/Mark/Projects/Yin_Detection_On_Stm32/startup_stm32l432xx.s
