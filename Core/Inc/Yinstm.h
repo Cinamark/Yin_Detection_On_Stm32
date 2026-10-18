@@ -92,17 +92,30 @@ const char notes [][4] = {"B 0",
 		"A 7",
 		"A#7",
 		"B 7"};
-void Yin_Diff(int8_t* src, float* dest){
-	float delta;
+void Yin_Diff(const uint8_t* src, float* dest){
 
 	for(int delay = 0; delay < W_SIZE; delay++){
+		
+		float sum = 0.0f;
 		for(int i = 0; i < W_SIZE; i++){
-			delta = src[i]-src[i+delay];
-			dest[delay] += delta * delta;
+			float delta = src[i]-src[i+delay];
+			sum += delta * delta;
      		}
+
+		dest[delay] = sum;
      	}
 }
 
+uint32_t crude(float* yin, uint16_t size){
+	uint32_t delta = 10;
+
+	for (uint16_t i = delta; i < 250; i++){
+		if (yin[i] < yin[delta])
+			delta = i;
+	}
+
+	return delta;
+}
 void Yin_FFT(float* src, float* power, float* dest, uint16_t destSize, arm_rfft_fast_instance_f32* fft_instance ){
 	arm_rfft_fast_f32(fft_instance, src, dest, 0);
 	arm_cmplx_mag_f32(dest, power, destSize);
@@ -110,9 +123,13 @@ void Yin_FFT(float* src, float* power, float* dest, uint16_t destSize, arm_rfft_
 		power[i] *= power[i];
 	}
 	arm_rfft_fast_f32(fft_instance, power, dest, 1);
+	
+	for (int i = 0; i < destSize; i++)
+	{
+		dest[i] = (dest[0]*2) - (2*dest[i]);
+	}
 
-
-
+	dest[0] = 0.0;
 }
 void adcToFloat(uint8_t* src, float* dest, uint16_t destSize){
 	
@@ -122,7 +139,7 @@ void adcToFloat(uint8_t* src, float* dest, uint16_t destSize){
 
 }
 void Yin_CMNDF(float* dest){
-	float sum = 0;
+	float sum = 0.0f;
 
 	dest[0] = 1;
 
@@ -133,23 +150,24 @@ void Yin_CMNDF(float* dest){
 }
 
 
-uint16_t Yin_AbsThresh(float *yin, float thresh, float* probability){
+uint32_t Yin_AbsThresh(float *yin, float thresh, float* probability){
 
-	uint16_t tau;
-	for (tau = 2; tau < W_SIZE; tau++){
-		if(yin[tau] < thresh) {
-			while ((tau + 1) < W_SIZE && yin[tau+1] < yin[tau])
-	  			tau++;
+	uint32_t tau;
+	for (int i = 2; i < W_SIZE; i++){
+		if(yin[i] < 0.1) {
+	*probability = 1 - yin[i];
+	tau = i;
+	i = W_SIZE;	
+//			while (((i + 1) < W_SIZE) && (yin[i+1] < yin[i]))
+//	  			i++;
       		}
 
-	*probability = 1 - yin[tau]; 
-	break;		
+	
 	}
-	if (tau == W_SIZE || yin[tau] >= thresh){
-		tau = -1;
-		*probability = 0;
-	}
-
+	//if (tau == W_SIZE || yin[tau] >= thresh){
+	//	tau = -1;
+	//	*probability = 0;
+	//}
 	return tau;
 
 

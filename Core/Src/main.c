@@ -62,6 +62,10 @@ arm_rfft_fast_instance_f32 fft;
 float   inputF[BUFFER_SIZE/2];
 float   powerBuff[BUFFER_SIZE/2];
 float   destBuff[BUFFER_SIZE/2];
+uint32_t basicPitch = 0;
+float   prob;
+float   threshold = 0.1;
+float   interPitch;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -119,7 +123,7 @@ int main(void)
 
   clearScreen(&hi2c1);
 
-  arm_rfft_fast_init_f32 (&fft, 1024);
+//  arm_rfft_fast_init_f32 (&fft, 1024);
     
 
   //set_pixel(64, 32, true, framebuffer);
@@ -135,24 +139,23 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    adcToFloat(adc_sine_440hz,inputF, W_SIZE);
-    Yin_FFT(inputF, powerBuff, destBuff, W_SIZE, &fft);
+//    adcToFloat(adc_sine_220hz,inputF, W_SIZE);
+    Yin_Diff(adc_sine_220hz, destBuff);
+//    Yin_FFT(inputF, powerBuff, destBuff, W_SIZE, &fft);
+    Yin_CMNDF(destBuff);
+//    basicPitch = crude(destBuff, W_SIZE);
+ basicPitch = Yin_AbsThresh(destBuff, threshold, &prob);
+    interPitch = Yin_ParaInterp(destBuff, basicPitch);
+    //printPitch(framebuffer, sizeof(framebuffer), 440); 
+    printPitch(framebuffer, sizeof(framebuffer), (float)ADC_TEST_FS_HZ/interPitch);
+    update(framebuffer, sizeof(framebuffer), &hi2c1);
+    HAL_Delay(1000);
+
   HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_3);
-  printPitch(framebuffer, sizeof(framebuffer), 220);
+  printPitch(framebuffer, sizeof(framebuffer), 34);
     update(framebuffer, sizeof(framebuffer), &hi2c1);
     HAL_Delay(1000);
-    printPitch(framebuffer, sizeof(framebuffer), 440);
-    update(framebuffer, sizeof(framebuffer), &hi2c1);
-    HAL_Delay(1000);
-    printPitch(framebuffer, sizeof(framebuffer), 52);
-    update(framebuffer, sizeof(framebuffer), &hi2c1);
-    HAL_Delay(1000);
-    printPitch(framebuffer, sizeof(framebuffer), 55);
-    update(framebuffer, sizeof(framebuffer), &hi2c1);
-    HAL_Delay(1000);
-    
-
-
+        
     /* USER CODE END WHILE */
        /* USER CODE BEGIN 3 */
   }

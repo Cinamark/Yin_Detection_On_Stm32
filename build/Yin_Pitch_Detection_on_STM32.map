@@ -12,16 +12,8 @@ bin_dsp/libCMSISDSP.a(arm_cmplx_mag_f32.c.obj)
                               CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj (arm_cmplx_mag_f32)
 bin_dsp/libCMSISDSP.a(arm_rfft_fast_f32.c.obj)
                               CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj (arm_rfft_fast_f32)
-bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
-                              CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj (arm_rfft_fast_init_f32)
-bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
-                              bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj) (twiddleCoef_rfft_32)
 bin_dsp/libCMSISDSP.a(arm_cfft_f32.c.obj)
                               bin_dsp/libCMSISDSP.a(arm_rfft_fast_f32.c.obj) (arm_cfft_f32)
-bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
-                              bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj) (arm_cfft_init_2048_f32)
-bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
-                              bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj) (arm_cfft_sR_f32_len16)
 bin_dsp/libCMSISDSP.a(arm_bitreversal2.c.obj)
                               bin_dsp/libCMSISDSP.a(arm_cfft_f32.c.obj) (arm_bitreversal_32)
 bin_dsp/libCMSISDSP.a(arm_cfft_radix8_f32.c.obj)
@@ -194,17 +186,13 @@ Discarded input sections
                 0x00000000       0x40 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
  .text.printLines
                 0x00000000       0x46 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
- .text.Yin_Diff
-                0x00000000       0x8c CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
- .text.Yin_CMNDF
-                0x00000000       0x7c CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
- .text.Yin_AbsThresh
-                0x00000000       0xc4 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
- .text.Yin_ParaInterp
-                0x00000000      0x164 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
+ .text.crude    0x00000000       0x54 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
+ .text.Yin_FFT  0x00000000       0xbc CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
+ .text.adcToFloat
+                0x00000000       0x4a CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
  .rodata.adc_sine_110hz
                 0x00000000      0x800 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
- .rodata.adc_sine_220hz
+ .rodata.adc_sine_440hz
                 0x00000000      0x800 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
  .rodata.adc_sine_880hz
                 0x00000000      0x800 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
@@ -228,6 +216,10 @@ Discarded input sections
                 0x00000000      0x800 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
  .rodata.adc_tests
                 0x00000000       0x9c CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
+ .bss.fft       0x00000000       0x18 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
+ .bss.inputF    0x00000000     0x1000 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
+ .bss.powerBuff
+                0x00000000     0x1000 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
  .group         0x00000000        0xc CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/stm32l4xx_it.c.obj
  .group         0x00000000        0xc CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/stm32l4xx_it.c.obj
  .group         0x00000000        0xc CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/stm32l4xx_it.c.obj
@@ -3061,6 +3053,16 @@ Discarded input sections
  .text          0x00000000        0x0 bin_dsp/libCMSISDSP.a(arm_cmplx_mag_f32.c.obj)
  .data          0x00000000        0x0 bin_dsp/libCMSISDSP.a(arm_cmplx_mag_f32.c.obj)
  .bss           0x00000000        0x0 bin_dsp/libCMSISDSP.a(arm_cmplx_mag_f32.c.obj)
+ .text.arm_cmplx_mag_f32
+                0x00000000      0x210 bin_dsp/libCMSISDSP.a(arm_cmplx_mag_f32.c.obj)
+ .debug_info    0x00000000      0x24d bin_dsp/libCMSISDSP.a(arm_cmplx_mag_f32.c.obj)
+ .debug_abbrev  0x00000000      0x120 bin_dsp/libCMSISDSP.a(arm_cmplx_mag_f32.c.obj)
+ .debug_aranges
+                0x00000000       0x20 bin_dsp/libCMSISDSP.a(arm_cmplx_mag_f32.c.obj)
+ .debug_rnglists
+                0x00000000       0x14 bin_dsp/libCMSISDSP.a(arm_cmplx_mag_f32.c.obj)
+ .debug_macro   0x00000000      0x1fc bin_dsp/libCMSISDSP.a(arm_cmplx_mag_f32.c.obj)
+ .debug_macro   0x00000000      0xae4 bin_dsp/libCMSISDSP.a(arm_cmplx_mag_f32.c.obj)
  .debug_macro   0x00000000       0x16 bin_dsp/libCMSISDSP.a(arm_cmplx_mag_f32.c.obj)
  .debug_macro   0x00000000       0x22 bin_dsp/libCMSISDSP.a(arm_cmplx_mag_f32.c.obj)
  .debug_macro   0x00000000       0x8e bin_dsp/libCMSISDSP.a(arm_cmplx_mag_f32.c.obj)
@@ -3080,6 +3082,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x10 bin_dsp/libCMSISDSP.a(arm_cmplx_mag_f32.c.obj)
  .debug_macro   0x00000000       0x58 bin_dsp/libCMSISDSP.a(arm_cmplx_mag_f32.c.obj)
  .debug_macro   0x00000000      0x1de bin_dsp/libCMSISDSP.a(arm_cmplx_mag_f32.c.obj)
+ .debug_macro   0x00000000       0x10 bin_dsp/libCMSISDSP.a(arm_cmplx_mag_f32.c.obj)
  .debug_macro   0x00000000       0x3c bin_dsp/libCMSISDSP.a(arm_cmplx_mag_f32.c.obj)
  .debug_macro   0x00000000      0x19b bin_dsp/libCMSISDSP.a(arm_cmplx_mag_f32.c.obj)
  .debug_macro   0x00000000      0x201 bin_dsp/libCMSISDSP.a(arm_cmplx_mag_f32.c.obj)
@@ -3089,7 +3092,16 @@ Discarded input sections
  .debug_macro   0x00000000       0x16 bin_dsp/libCMSISDSP.a(arm_cmplx_mag_f32.c.obj)
  .debug_macro   0x00000000       0xfb bin_dsp/libCMSISDSP.a(arm_cmplx_mag_f32.c.obj)
  .debug_macro   0x00000000       0xc1 bin_dsp/libCMSISDSP.a(arm_cmplx_mag_f32.c.obj)
+ .debug_macro   0x00000000       0x4e bin_dsp/libCMSISDSP.a(arm_cmplx_mag_f32.c.obj)
+ .debug_macro   0x00000000       0x3b bin_dsp/libCMSISDSP.a(arm_cmplx_mag_f32.c.obj)
  .debug_macro   0x00000000       0x29 bin_dsp/libCMSISDSP.a(arm_cmplx_mag_f32.c.obj)
+ .debug_macro   0x00000000       0x22 bin_dsp/libCMSISDSP.a(arm_cmplx_mag_f32.c.obj)
+ .debug_line    0x00000000      0x583 bin_dsp/libCMSISDSP.a(arm_cmplx_mag_f32.c.obj)
+ .debug_str     0x00000000     0x9377 bin_dsp/libCMSISDSP.a(arm_cmplx_mag_f32.c.obj)
+ .comment       0x00000000       0x1f bin_dsp/libCMSISDSP.a(arm_cmplx_mag_f32.c.obj)
+ .debug_frame   0x00000000       0x38 bin_dsp/libCMSISDSP.a(arm_cmplx_mag_f32.c.obj)
+ .ARM.attributes
+                0x00000000       0x34 bin_dsp/libCMSISDSP.a(arm_cmplx_mag_f32.c.obj)
  .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_rfft_fast_f32.c.obj)
  .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_rfft_fast_f32.c.obj)
  .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_rfft_fast_f32.c.obj)
@@ -3127,6 +3139,19 @@ Discarded input sections
  .text          0x00000000        0x0 bin_dsp/libCMSISDSP.a(arm_rfft_fast_f32.c.obj)
  .data          0x00000000        0x0 bin_dsp/libCMSISDSP.a(arm_rfft_fast_f32.c.obj)
  .bss           0x00000000        0x0 bin_dsp/libCMSISDSP.a(arm_rfft_fast_f32.c.obj)
+ .text.stage_rfft_f32
+                0x00000000      0x1d0 bin_dsp/libCMSISDSP.a(arm_rfft_fast_f32.c.obj)
+ .text.merge_rfft_f32
+                0x00000000      0x196 bin_dsp/libCMSISDSP.a(arm_rfft_fast_f32.c.obj)
+ .text.arm_rfft_fast_f32
+                0x00000000       0x4e bin_dsp/libCMSISDSP.a(arm_rfft_fast_f32.c.obj)
+ .debug_info    0x00000000      0x46d bin_dsp/libCMSISDSP.a(arm_rfft_fast_f32.c.obj)
+ .debug_abbrev  0x00000000      0x12c bin_dsp/libCMSISDSP.a(arm_rfft_fast_f32.c.obj)
+ .debug_aranges
+                0x00000000       0x30 bin_dsp/libCMSISDSP.a(arm_rfft_fast_f32.c.obj)
+ .debug_rnglists
+                0x00000000       0x21 bin_dsp/libCMSISDSP.a(arm_rfft_fast_f32.c.obj)
+ .debug_macro   0x00000000      0x206 bin_dsp/libCMSISDSP.a(arm_rfft_fast_f32.c.obj)
  .debug_macro   0x00000000      0xae4 bin_dsp/libCMSISDSP.a(arm_rfft_fast_f32.c.obj)
  .debug_macro   0x00000000       0x16 bin_dsp/libCMSISDSP.a(arm_rfft_fast_f32.c.obj)
  .debug_macro   0x00000000       0x22 bin_dsp/libCMSISDSP.a(arm_rfft_fast_f32.c.obj)
@@ -3161,289 +3186,12 @@ Discarded input sections
  .debug_macro   0x00000000       0x3b bin_dsp/libCMSISDSP.a(arm_rfft_fast_f32.c.obj)
  .debug_macro   0x00000000       0x29 bin_dsp/libCMSISDSP.a(arm_rfft_fast_f32.c.obj)
  .debug_macro   0x00000000       0x28 bin_dsp/libCMSISDSP.a(arm_rfft_fast_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .text          0x00000000        0x0 bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .data          0x00000000        0x0 bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .bss           0x00000000        0x0 bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .debug_macro   0x00000000      0xae4 bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .debug_macro   0x00000000       0x16 bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .debug_macro   0x00000000       0x22 bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .debug_macro   0x00000000       0x8e bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .debug_macro   0x00000000       0x51 bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .debug_macro   0x00000000      0x103 bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .debug_macro   0x00000000       0x6a bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .debug_macro   0x00000000      0x1df bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .debug_macro   0x00000000       0x74 bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .debug_macro   0x00000000       0x2a bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .debug_macro   0x00000000       0x3c bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .debug_macro   0x00000000       0x34 bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .debug_macro   0x00000000      0x190 bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .debug_macro   0x00000000      0x364 bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .debug_macro   0x00000000       0x16 bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .debug_macro   0x00000000       0x4a bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .debug_macro   0x00000000       0x34 bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .debug_macro   0x00000000       0x10 bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .debug_macro   0x00000000       0x58 bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .debug_macro   0x00000000      0x1de bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .debug_macro   0x00000000       0x10 bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .debug_macro   0x00000000       0x3c bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .debug_macro   0x00000000      0x19b bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .debug_macro   0x00000000      0x201 bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .debug_macro   0x00000000       0x7c bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .debug_macro   0x00000000       0x17 bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .debug_macro   0x00000000      0x118 bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .debug_macro   0x00000000       0x16 bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .debug_macro   0x00000000       0xfb bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .debug_macro   0x00000000       0xc1 bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .debug_macro   0x00000000       0x4e bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .debug_macro   0x00000000       0x3b bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .debug_macro   0x00000000       0x29 bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .debug_macro   0x00000000       0x28 bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .text          0x00000000        0x0 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .data          0x00000000        0x0 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .bss           0x00000000        0x0 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.armBitRevTable
-                0x00000000      0x800 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.twiddleCoefF64_16
-                0x00000000      0x100 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.twiddleCoefF64_32
-                0x00000000      0x200 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.twiddleCoefF64_64
-                0x00000000      0x400 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.twiddleCoefF64_128
-                0x00000000      0x800 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.twiddleCoefF64_256
-                0x00000000     0x1000 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.twiddleCoefF64_512
-                0x00000000     0x2000 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.twiddleCoefF64_1024
-                0x00000000     0x4000 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.twiddleCoefF64_2048
-                0x00000000     0x8000 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.twiddleCoefF64_4096
-                0x00000000    0x10000 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.twiddleCoef_4096
-                0x00000000     0x8000 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.twiddleCoef_16_q31
-                0x00000000       0x60 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.twiddleCoef_32_q31
-                0x00000000       0xc0 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.twiddleCoef_64_q31
-                0x00000000      0x180 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.twiddleCoef_128_q31
-                0x00000000      0x300 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.twiddleCoef_256_q31
-                0x00000000      0x600 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.twiddleCoef_512_q31
-                0x00000000      0xc00 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.twiddleCoef_1024_q31
-                0x00000000     0x1800 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.twiddleCoef_2048_q31
-                0x00000000     0x3000 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.twiddleCoef_4096_q31
-                0x00000000     0x6000 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.twiddleCoef_16_q15
-                0x00000000       0x30 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.twiddleCoef_32_q15
-                0x00000000       0x60 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.twiddleCoef_64_q15
-                0x00000000       0xc0 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.twiddleCoef_128_q15
-                0x00000000      0x180 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.twiddleCoef_256_q15
-                0x00000000      0x300 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.twiddleCoef_512_q15
-                0x00000000      0x600 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.twiddleCoef_1024_q15
-                0x00000000      0xc00 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.twiddleCoef_2048_q15
-                0x00000000     0x1800 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.twiddleCoef_4096_q15
-                0x00000000     0x3000 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.armBitRevIndexTableF64_16
-                0x00000000       0x18 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.armBitRevIndexTableF64_32
-                0x00000000       0x30 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.armBitRevIndexTableF64_64
-                0x00000000       0x70 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.armBitRevIndexTableF64_128
-                0x00000000       0xe0 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.armBitRevIndexTableF64_256
-                0x00000000      0x1e0 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.armBitRevIndexTableF64_512
-                0x00000000      0x3c0 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.armBitRevIndexTableF64_1024
-                0x00000000      0x7c0 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.armBitRevIndexTableF64_2048
-                0x00000000      0xf80 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.armBitRevIndexTableF64_4096
-                0x00000000     0x1f80 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.armBitRevIndexTable4096
-                0x00000000     0x1f80 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.armBitRevIndexTable_fixed_16
-                0x00000000       0x18 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.armBitRevIndexTable_fixed_32
-                0x00000000       0x30 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.armBitRevIndexTable_fixed_64
-                0x00000000       0x70 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.armBitRevIndexTable_fixed_128
-                0x00000000       0xe0 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.armBitRevIndexTable_fixed_256
-                0x00000000      0x1e0 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.armBitRevIndexTable_fixed_512
-                0x00000000      0x3c0 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.armBitRevIndexTable_fixed_1024
-                0x00000000      0x7c0 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.armBitRevIndexTable_fixed_2048
-                0x00000000      0xf80 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.armBitRevIndexTable_fixed_4096
-                0x00000000     0x1f80 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.twiddleCoefF64_rfft_32
-                0x00000000      0x100 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.twiddleCoefF64_rfft_64
-                0x00000000      0x200 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.twiddleCoefF64_rfft_128
-                0x00000000      0x400 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.twiddleCoefF64_rfft_256
-                0x00000000      0x800 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.twiddleCoefF64_rfft_512
-                0x00000000     0x1000 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.twiddleCoefF64_rfft_1024
-                0x00000000     0x2000 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.twiddleCoefF64_rfft_2048
-                0x00000000     0x4000 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.twiddleCoefF64_rfft_4096
-                0x00000000     0x8000 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.realCoefA
-                0x00000000     0x8000 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.realCoefB
-                0x00000000     0x8000 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.realCoefAQ31
-                0x00000000     0x8000 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.realCoefBQ31
-                0x00000000     0x8000 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.realCoefAQ15
-                0x00000000     0x4000 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.realCoefBQ15
-                0x00000000     0x4000 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.armRecipTableQ15
-                0x00000000       0x80 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.armRecipTableQ31
-                0x00000000      0x100 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.sinTable_f32
-                0x00000000      0x804 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.sinTable_q31
-                0x00000000      0x804 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.sinTable_q15
-                0x00000000      0x402 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.sqrt_initial_lut_q31
-                0x00000000       0x80 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .rodata.sqrt_initial_lut_q15
-                0x00000000       0x20 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .debug_macro   0x00000000      0xae4 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .debug_macro   0x00000000       0x16 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .debug_macro   0x00000000       0x22 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .debug_macro   0x00000000       0x8e bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .debug_macro   0x00000000       0x51 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .debug_macro   0x00000000      0x103 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .debug_macro   0x00000000       0x6a bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .debug_macro   0x00000000      0x1df bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .debug_macro   0x00000000       0x74 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .debug_macro   0x00000000       0x2a bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .debug_macro   0x00000000       0x3c bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .debug_macro   0x00000000       0x34 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .debug_macro   0x00000000      0x190 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .debug_macro   0x00000000      0x364 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .debug_macro   0x00000000       0x16 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .debug_macro   0x00000000       0x4a bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .debug_macro   0x00000000       0x34 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .debug_macro   0x00000000       0x10 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .debug_macro   0x00000000       0x58 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .debug_macro   0x00000000      0x1de bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .debug_macro   0x00000000       0x10 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .debug_macro   0x00000000       0x3c bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .debug_macro   0x00000000      0x19b bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .debug_macro   0x00000000      0x201 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .debug_macro   0x00000000       0x7c bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .debug_macro   0x00000000       0x17 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .debug_macro   0x00000000      0x118 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .debug_macro   0x00000000       0x16 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .debug_macro   0x00000000       0xfb bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .debug_macro   0x00000000       0xc1 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .debug_macro   0x00000000       0x54 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .debug_macro   0x00000000       0x3b bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .debug_macro   0x00000000       0x29 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .debug_macro   0x00000000       0x22 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .debug_macro   0x00000000       0xc7 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
+ .debug_line    0x00000000      0x5e7 bin_dsp/libCMSISDSP.a(arm_rfft_fast_f32.c.obj)
+ .debug_str     0x00000000     0x938f bin_dsp/libCMSISDSP.a(arm_rfft_fast_f32.c.obj)
+ .comment       0x00000000       0x1f bin_dsp/libCMSISDSP.a(arm_rfft_fast_f32.c.obj)
+ .debug_frame   0x00000000       0x84 bin_dsp/libCMSISDSP.a(arm_rfft_fast_f32.c.obj)
+ .ARM.attributes
+                0x00000000       0x34 bin_dsp/libCMSISDSP.a(arm_rfft_fast_f32.c.obj)
  .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_cfft_f32.c.obj)
  .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_cfft_f32.c.obj)
  .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_cfft_f32.c.obj)
@@ -3482,6 +3230,19 @@ Discarded input sections
  .text          0x00000000        0x0 bin_dsp/libCMSISDSP.a(arm_cfft_f32.c.obj)
  .data          0x00000000        0x0 bin_dsp/libCMSISDSP.a(arm_cfft_f32.c.obj)
  .bss           0x00000000        0x0 bin_dsp/libCMSISDSP.a(arm_cfft_f32.c.obj)
+ .text.arm_cfft_radix8by2_f32
+                0x00000000      0x3e8 bin_dsp/libCMSISDSP.a(arm_cfft_f32.c.obj)
+ .text.arm_cfft_radix8by4_f32
+                0x00000000      0xc60 bin_dsp/libCMSISDSP.a(arm_cfft_f32.c.obj)
+ .text.arm_cfft_f32
+                0x00000000      0x174 bin_dsp/libCMSISDSP.a(arm_cfft_f32.c.obj)
+ .debug_info    0x00000000      0x57b bin_dsp/libCMSISDSP.a(arm_cfft_f32.c.obj)
+ .debug_abbrev  0x00000000      0x140 bin_dsp/libCMSISDSP.a(arm_cfft_f32.c.obj)
+ .debug_aranges
+                0x00000000       0x30 bin_dsp/libCMSISDSP.a(arm_cfft_f32.c.obj)
+ .debug_rnglists
+                0x00000000       0x22 bin_dsp/libCMSISDSP.a(arm_cfft_f32.c.obj)
+ .debug_macro   0x00000000      0x219 bin_dsp/libCMSISDSP.a(arm_cfft_f32.c.obj)
  .debug_macro   0x00000000      0xae4 bin_dsp/libCMSISDSP.a(arm_cfft_f32.c.obj)
  .debug_macro   0x00000000       0x16 bin_dsp/libCMSISDSP.a(arm_cfft_f32.c.obj)
  .debug_macro   0x00000000       0x22 bin_dsp/libCMSISDSP.a(arm_cfft_f32.c.obj)
@@ -3517,280 +3278,12 @@ Discarded input sections
  .debug_macro   0x00000000       0x29 bin_dsp/libCMSISDSP.a(arm_cfft_f32.c.obj)
  .debug_macro   0x00000000       0x28 bin_dsp/libCMSISDSP.a(arm_cfft_f32.c.obj)
  .debug_macro   0x00000000       0xc7 bin_dsp/libCMSISDSP.a(arm_cfft_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .text          0x00000000        0x0 bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .data          0x00000000        0x0 bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .bss           0x00000000        0x0 bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .text.arm_cfft_init_4096_f32
-                0x00000000       0x44 bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .text.arm_cfft_init_f32
-                0x00000000       0xe6 bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .debug_macro   0x00000000      0xae4 bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .debug_macro   0x00000000       0x16 bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .debug_macro   0x00000000       0x22 bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .debug_macro   0x00000000       0x8e bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .debug_macro   0x00000000       0x51 bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .debug_macro   0x00000000      0x103 bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .debug_macro   0x00000000       0x6a bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .debug_macro   0x00000000      0x1df bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .debug_macro   0x00000000       0x74 bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .debug_macro   0x00000000       0x2a bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .debug_macro   0x00000000       0x3c bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .debug_macro   0x00000000       0x34 bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .debug_macro   0x00000000      0x190 bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .debug_macro   0x00000000      0x364 bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .debug_macro   0x00000000       0x16 bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .debug_macro   0x00000000       0x4a bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .debug_macro   0x00000000       0x34 bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .debug_macro   0x00000000       0x10 bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .debug_macro   0x00000000       0x58 bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .debug_macro   0x00000000      0x1de bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .debug_macro   0x00000000       0x10 bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .debug_macro   0x00000000       0x3c bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .debug_macro   0x00000000      0x19b bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .debug_macro   0x00000000      0x201 bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .debug_macro   0x00000000       0x7c bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .debug_macro   0x00000000       0x17 bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .debug_macro   0x00000000      0x118 bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .debug_macro   0x00000000       0x16 bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .debug_macro   0x00000000       0xfb bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .debug_macro   0x00000000       0xc1 bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .debug_macro   0x00000000       0x4e bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .debug_macro   0x00000000       0x3b bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .debug_macro   0x00000000       0x29 bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .debug_macro   0x00000000       0x28 bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .debug_macro   0x00000000       0xc7 bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .text          0x00000000        0x0 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .data          0x00000000        0x0 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .bss           0x00000000        0x0 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .rodata.arm_cfft_sR_f64_len16
-                0x00000000       0x10 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .rodata.arm_cfft_sR_f64_len32
-                0x00000000       0x10 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .rodata.arm_cfft_sR_f64_len64
-                0x00000000       0x10 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .rodata.arm_cfft_sR_f64_len128
-                0x00000000       0x10 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .rodata.arm_cfft_sR_f64_len256
-                0x00000000       0x10 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .rodata.arm_cfft_sR_f64_len512
-                0x00000000       0x10 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .rodata.arm_cfft_sR_f64_len1024
-                0x00000000       0x10 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .rodata.arm_cfft_sR_f64_len2048
-                0x00000000       0x10 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .rodata.arm_cfft_sR_f64_len4096
-                0x00000000       0x10 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .rodata.arm_cfft_sR_f32_len4096
-                0x00000000       0x10 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .rodata.arm_cfft_sR_q31_len16
-                0x00000000       0x10 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .rodata.arm_cfft_sR_q31_len32
-                0x00000000       0x10 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .rodata.arm_cfft_sR_q31_len64
-                0x00000000       0x10 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .rodata.arm_cfft_sR_q31_len128
-                0x00000000       0x10 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .rodata.arm_cfft_sR_q31_len256
-                0x00000000       0x10 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .rodata.arm_cfft_sR_q31_len512
-                0x00000000       0x10 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .rodata.arm_cfft_sR_q31_len1024
-                0x00000000       0x10 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .rodata.arm_cfft_sR_q31_len2048
-                0x00000000       0x10 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .rodata.arm_cfft_sR_q31_len4096
-                0x00000000       0x10 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .rodata.arm_cfft_sR_q15_len16
-                0x00000000       0x10 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .rodata.arm_cfft_sR_q15_len32
-                0x00000000       0x10 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .rodata.arm_cfft_sR_q15_len64
-                0x00000000       0x10 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .rodata.arm_cfft_sR_q15_len128
-                0x00000000       0x10 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .rodata.arm_cfft_sR_q15_len256
-                0x00000000       0x10 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .rodata.arm_cfft_sR_q15_len512
-                0x00000000       0x10 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .rodata.arm_cfft_sR_q15_len1024
-                0x00000000       0x10 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .rodata.arm_cfft_sR_q15_len2048
-                0x00000000       0x10 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .rodata.arm_cfft_sR_q15_len4096
-                0x00000000       0x10 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .rodata.arm_rfft_fast_sR_f64_len32
-                0x00000000       0x18 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .rodata.arm_rfft_fast_sR_f64_len64
-                0x00000000       0x18 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .rodata.arm_rfft_fast_sR_f64_len128
-                0x00000000       0x18 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .rodata.arm_rfft_fast_sR_f64_len256
-                0x00000000       0x18 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .rodata.arm_rfft_fast_sR_f64_len512
-                0x00000000       0x18 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .rodata.arm_rfft_fast_sR_f64_len1024
-                0x00000000       0x18 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .rodata.arm_rfft_fast_sR_f64_len2048
-                0x00000000       0x18 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .rodata.arm_rfft_fast_sR_f64_len4096
-                0x00000000       0x18 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .rodata.arm_rfft_fast_sR_f32_len32
-                0x00000000       0x18 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .rodata.arm_rfft_fast_sR_f32_len64
-                0x00000000       0x18 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .rodata.arm_rfft_fast_sR_f32_len128
-                0x00000000       0x18 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .rodata.arm_rfft_fast_sR_f32_len256
-                0x00000000       0x18 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .rodata.arm_rfft_fast_sR_f32_len512
-                0x00000000       0x18 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .rodata.arm_rfft_fast_sR_f32_len1024
-                0x00000000       0x18 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .rodata.arm_rfft_fast_sR_f32_len2048
-                0x00000000       0x18 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .rodata.arm_rfft_fast_sR_f32_len4096
-                0x00000000       0x18 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .rodata.arm_rfft_sR_q31_len32
-                0x00000000       0x18 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .rodata.arm_rfft_sR_q31_len64
-                0x00000000       0x18 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .rodata.arm_rfft_sR_q31_len128
-                0x00000000       0x18 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .rodata.arm_rfft_sR_q31_len256
-                0x00000000       0x18 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .rodata.arm_rfft_sR_q31_len512
-                0x00000000       0x18 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .rodata.arm_rfft_sR_q31_len1024
-                0x00000000       0x18 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .rodata.arm_rfft_sR_q31_len2048
-                0x00000000       0x18 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .rodata.arm_rfft_sR_q31_len4096
-                0x00000000       0x18 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .rodata.arm_rfft_sR_q31_len8192
-                0x00000000       0x18 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .rodata.arm_rfft_sR_q15_len32
-                0x00000000       0x18 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .rodata.arm_rfft_sR_q15_len64
-                0x00000000       0x18 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .rodata.arm_rfft_sR_q15_len128
-                0x00000000       0x18 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .rodata.arm_rfft_sR_q15_len256
-                0x00000000       0x18 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .rodata.arm_rfft_sR_q15_len512
-                0x00000000       0x18 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .rodata.arm_rfft_sR_q15_len1024
-                0x00000000       0x18 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .rodata.arm_rfft_sR_q15_len2048
-                0x00000000       0x18 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .rodata.arm_rfft_sR_q15_len4096
-                0x00000000       0x18 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .rodata.arm_rfft_sR_q15_len8192
-                0x00000000       0x18 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .debug_macro   0x00000000      0xae4 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .debug_macro   0x00000000       0x16 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .debug_macro   0x00000000       0x22 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .debug_macro   0x00000000       0x8e bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .debug_macro   0x00000000       0x51 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .debug_macro   0x00000000      0x103 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .debug_macro   0x00000000       0x6a bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .debug_macro   0x00000000      0x1df bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .debug_macro   0x00000000       0x74 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .debug_macro   0x00000000       0x2a bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .debug_macro   0x00000000       0x3c bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .debug_macro   0x00000000       0x34 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .debug_macro   0x00000000      0x190 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .debug_macro   0x00000000      0x364 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .debug_macro   0x00000000       0x16 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .debug_macro   0x00000000       0x4a bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .debug_macro   0x00000000       0x34 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .debug_macro   0x00000000       0x10 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .debug_macro   0x00000000       0x58 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .debug_macro   0x00000000      0x1de bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .debug_macro   0x00000000       0x10 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .debug_macro   0x00000000       0x3c bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .debug_macro   0x00000000      0x19b bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .debug_macro   0x00000000      0x201 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .debug_macro   0x00000000       0x7c bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .debug_macro   0x00000000       0x17 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .debug_macro   0x00000000      0x118 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .debug_macro   0x00000000       0x16 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .debug_macro   0x00000000       0xfb bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .debug_macro   0x00000000       0xc1 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .debug_macro   0x00000000       0x54 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .debug_macro   0x00000000       0x3b bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .debug_macro   0x00000000       0x29 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .debug_macro   0x00000000       0x22 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .debug_macro   0x00000000       0xc7 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
+ .debug_line    0x00000000      0xc06 bin_dsp/libCMSISDSP.a(arm_cfft_f32.c.obj)
+ .debug_str     0x00000000     0x9a14 bin_dsp/libCMSISDSP.a(arm_cfft_f32.c.obj)
+ .comment       0x00000000       0x1f bin_dsp/libCMSISDSP.a(arm_cfft_f32.c.obj)
+ .debug_frame   0x00000000       0x84 bin_dsp/libCMSISDSP.a(arm_cfft_f32.c.obj)
+ .ARM.attributes
+                0x00000000       0x34 bin_dsp/libCMSISDSP.a(arm_cfft_f32.c.obj)
  .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_bitreversal2.c.obj)
  .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_bitreversal2.c.obj)
  .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_bitreversal2.c.obj)
@@ -3831,8 +3324,17 @@ Discarded input sections
  .bss           0x00000000        0x0 bin_dsp/libCMSISDSP.a(arm_bitreversal2.c.obj)
  .text.arm_bitreversal_64
                 0x00000000       0xe0 bin_dsp/libCMSISDSP.a(arm_bitreversal2.c.obj)
+ .text.arm_bitreversal_32
+                0x00000000       0xb0 bin_dsp/libCMSISDSP.a(arm_bitreversal2.c.obj)
  .text.arm_bitreversal_16
                 0x00000000       0xac bin_dsp/libCMSISDSP.a(arm_bitreversal2.c.obj)
+ .debug_info    0x00000000      0x242 bin_dsp/libCMSISDSP.a(arm_bitreversal2.c.obj)
+ .debug_abbrev  0x00000000       0x8d bin_dsp/libCMSISDSP.a(arm_bitreversal2.c.obj)
+ .debug_aranges
+                0x00000000       0x30 bin_dsp/libCMSISDSP.a(arm_bitreversal2.c.obj)
+ .debug_rnglists
+                0x00000000       0x22 bin_dsp/libCMSISDSP.a(arm_bitreversal2.c.obj)
+ .debug_macro   0x00000000      0x20f bin_dsp/libCMSISDSP.a(arm_bitreversal2.c.obj)
  .debug_macro   0x00000000      0xae4 bin_dsp/libCMSISDSP.a(arm_bitreversal2.c.obj)
  .debug_macro   0x00000000       0x16 bin_dsp/libCMSISDSP.a(arm_bitreversal2.c.obj)
  .debug_macro   0x00000000       0x22 bin_dsp/libCMSISDSP.a(arm_bitreversal2.c.obj)
@@ -3868,6 +3370,12 @@ Discarded input sections
  .debug_macro   0x00000000       0x29 bin_dsp/libCMSISDSP.a(arm_bitreversal2.c.obj)
  .debug_macro   0x00000000       0x28 bin_dsp/libCMSISDSP.a(arm_bitreversal2.c.obj)
  .debug_macro   0x00000000       0xc7 bin_dsp/libCMSISDSP.a(arm_bitreversal2.c.obj)
+ .debug_line    0x00000000      0x57c bin_dsp/libCMSISDSP.a(arm_bitreversal2.c.obj)
+ .debug_str     0x00000000     0x990f bin_dsp/libCMSISDSP.a(arm_bitreversal2.c.obj)
+ .comment       0x00000000       0x1f bin_dsp/libCMSISDSP.a(arm_bitreversal2.c.obj)
+ .debug_frame   0x00000000       0x94 bin_dsp/libCMSISDSP.a(arm_bitreversal2.c.obj)
+ .ARM.attributes
+                0x00000000       0x34 bin_dsp/libCMSISDSP.a(arm_bitreversal2.c.obj)
  .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_cfft_radix8_f32.c.obj)
  .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_cfft_radix8_f32.c.obj)
  .group         0x00000000        0xc bin_dsp/libCMSISDSP.a(arm_cfft_radix8_f32.c.obj)
@@ -3905,6 +3413,15 @@ Discarded input sections
  .text          0x00000000        0x0 bin_dsp/libCMSISDSP.a(arm_cfft_radix8_f32.c.obj)
  .data          0x00000000        0x0 bin_dsp/libCMSISDSP.a(arm_cfft_radix8_f32.c.obj)
  .bss           0x00000000        0x0 bin_dsp/libCMSISDSP.a(arm_cfft_radix8_f32.c.obj)
+ .text.arm_radix8_butterfly_f32
+                0x00000000     0x1008 bin_dsp/libCMSISDSP.a(arm_cfft_radix8_f32.c.obj)
+ .debug_info    0x00000000      0x443 bin_dsp/libCMSISDSP.a(arm_cfft_radix8_f32.c.obj)
+ .debug_abbrev  0x00000000       0x9a bin_dsp/libCMSISDSP.a(arm_cfft_radix8_f32.c.obj)
+ .debug_aranges
+                0x00000000       0x20 bin_dsp/libCMSISDSP.a(arm_cfft_radix8_f32.c.obj)
+ .debug_rnglists
+                0x00000000       0x14 bin_dsp/libCMSISDSP.a(arm_cfft_radix8_f32.c.obj)
+ .debug_macro   0x00000000      0x206 bin_dsp/libCMSISDSP.a(arm_cfft_radix8_f32.c.obj)
  .debug_macro   0x00000000      0xae4 bin_dsp/libCMSISDSP.a(arm_cfft_radix8_f32.c.obj)
  .debug_macro   0x00000000       0x16 bin_dsp/libCMSISDSP.a(arm_cfft_radix8_f32.c.obj)
  .debug_macro   0x00000000       0x22 bin_dsp/libCMSISDSP.a(arm_cfft_radix8_f32.c.obj)
@@ -3939,6 +3456,12 @@ Discarded input sections
  .debug_macro   0x00000000       0x3b bin_dsp/libCMSISDSP.a(arm_cfft_radix8_f32.c.obj)
  .debug_macro   0x00000000       0x29 bin_dsp/libCMSISDSP.a(arm_cfft_radix8_f32.c.obj)
  .debug_macro   0x00000000       0x28 bin_dsp/libCMSISDSP.a(arm_cfft_radix8_f32.c.obj)
+ .debug_line    0x00000000      0x89b bin_dsp/libCMSISDSP.a(arm_cfft_radix8_f32.c.obj)
+ .debug_str     0x00000000     0x92f3 bin_dsp/libCMSISDSP.a(arm_cfft_radix8_f32.c.obj)
+ .comment       0x00000000       0x1f bin_dsp/libCMSISDSP.a(arm_cfft_radix8_f32.c.obj)
+ .debug_frame   0x00000000       0x38 bin_dsp/libCMSISDSP.a(arm_cfft_radix8_f32.c.obj)
+ .ARM.attributes
+                0x00000000       0x34 bin_dsp/libCMSISDSP.a(arm_cfft_radix8_f32.c.obj)
  .text          0x00000000      0x254 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_muldf3.o)
  .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_muldf3.o)
  .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_muldf3.o)
@@ -4473,7 +3996,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtn.o
                 0x08000190                        . = ALIGN (0x8)
  *fill*         0x0800018c        0x4 
 
-.text           0x08000190     0x7b00
+.text           0x08000190     0x4f80
                 0x08000190                        . = ALIGN (0x8)
  *(.text)
  .text          0x08000190      0x378 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_addsubdf3.o)
@@ -4550,601 +4073,440 @@ LOAD /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtn.o
  .text.printText
                 0x08000e10       0xaa CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
                 0x08000e10                printText
- .text.Yin_FFT  0x08000eba       0x76 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
-                0x08000eba                Yin_FFT
- .text.adcToFloat
-                0x08000f30       0x4a CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
-                0x08000f30                adcToFloat
- *fill*         0x08000f7a        0x6 
+ .text.Yin_Diff
+                0x08000eba       0x8a CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
+                0x08000eba                Yin_Diff
+ .text.Yin_CMNDF
+                0x08000f44       0x7c CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
+                0x08000f44                Yin_CMNDF
+ .text.Yin_AbsThresh
+                0x08000fc0       0x78 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
+                0x08000fc0                Yin_AbsThresh
+ .text.Yin_ParaInterp
+                0x08001038      0x164 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
+                0x08001038                Yin_ParaInterp
+ *fill*         0x0800119c        0x4 
  .text.printPitch
-                0x08000f80       0xc4 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
-                0x08000f80                printPitch
- .text.main     0x08001044      0x150 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
-                0x08001044                main
+                0x080011a0       0xc4 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
+                0x080011a0                printPitch
+ .text.main     0x08001264      0x12c CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
+                0x08001264                main
  .text.SystemClock_Config
-                0x08001194       0xa4 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
-                0x08001194                SystemClock_Config
+                0x08001390       0xa4 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
+                0x08001390                SystemClock_Config
  .text.MX_ADC1_Init
-                0x08001238       0xc8 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
+                0x08001434       0xc8 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
  .text.MX_I2C1_Init
-                0x08001300       0x80 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
+                0x080014fc       0x80 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
  .text.MX_DMA_Init
-                0x08001380       0x3c CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
+                0x0800157c       0x3c CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
  .text.MX_GPIO_Init
-                0x080013bc       0x98 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
+                0x080015b8       0x98 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
  .text.Error_Handler
-                0x08001454        0xc CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
-                0x08001454                Error_Handler
+                0x08001650        0xc CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
+                0x08001650                Error_Handler
  .text.NMI_Handler
-                0x08001460        0x8 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/stm32l4xx_it.c.obj
-                0x08001460                NMI_Handler
+                0x0800165c        0x8 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/stm32l4xx_it.c.obj
+                0x0800165c                NMI_Handler
  .text.HardFault_Handler
-                0x08001468        0x8 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/stm32l4xx_it.c.obj
-                0x08001468                HardFault_Handler
+                0x08001664        0x8 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/stm32l4xx_it.c.obj
+                0x08001664                HardFault_Handler
  .text.MemManage_Handler
-                0x08001470        0x8 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/stm32l4xx_it.c.obj
-                0x08001470                MemManage_Handler
+                0x0800166c        0x8 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/stm32l4xx_it.c.obj
+                0x0800166c                MemManage_Handler
  .text.BusFault_Handler
-                0x08001478        0x8 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/stm32l4xx_it.c.obj
-                0x08001478                BusFault_Handler
+                0x08001674        0x8 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/stm32l4xx_it.c.obj
+                0x08001674                BusFault_Handler
  .text.UsageFault_Handler
-                0x08001480        0x8 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/stm32l4xx_it.c.obj
-                0x08001480                UsageFault_Handler
+                0x0800167c        0x8 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/stm32l4xx_it.c.obj
+                0x0800167c                UsageFault_Handler
  .text.SVC_Handler
-                0x08001488        0xc CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/stm32l4xx_it.c.obj
-                0x08001488                SVC_Handler
+                0x08001684        0xc CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/stm32l4xx_it.c.obj
+                0x08001684                SVC_Handler
  .text.DebugMon_Handler
-                0x08001494        0xc CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/stm32l4xx_it.c.obj
-                0x08001494                DebugMon_Handler
+                0x08001690        0xc CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/stm32l4xx_it.c.obj
+                0x08001690                DebugMon_Handler
  .text.PendSV_Handler
-                0x080014a0        0xc CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/stm32l4xx_it.c.obj
-                0x080014a0                PendSV_Handler
+                0x0800169c        0xc CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/stm32l4xx_it.c.obj
+                0x0800169c                PendSV_Handler
  .text.SysTick_Handler
-                0x080014ac        0xc CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/stm32l4xx_it.c.obj
-                0x080014ac                SysTick_Handler
+                0x080016a8        0xc CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/stm32l4xx_it.c.obj
+                0x080016a8                SysTick_Handler
  .text.DMA1_Channel1_IRQHandler
-                0x080014b8       0x14 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/stm32l4xx_it.c.obj
-                0x080014b8                DMA1_Channel1_IRQHandler
+                0x080016b4       0x14 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/stm32l4xx_it.c.obj
+                0x080016b4                DMA1_Channel1_IRQHandler
  .text.HAL_MspInit
-                0x080014cc       0x44 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/stm32l4xx_hal_msp.c.obj
-                0x080014cc                HAL_MspInit
+                0x080016c8       0x44 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/stm32l4xx_hal_msp.c.obj
+                0x080016c8                HAL_MspInit
  .text.HAL_ADC_MspInit
-                0x08001510      0x124 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/stm32l4xx_hal_msp.c.obj
-                0x08001510                HAL_ADC_MspInit
+                0x0800170c      0x124 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/stm32l4xx_hal_msp.c.obj
+                0x0800170c                HAL_ADC_MspInit
  .text.HAL_I2C_MspInit
-                0x08001634       0xb0 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/stm32l4xx_hal_msp.c.obj
-                0x08001634                HAL_I2C_MspInit
+                0x08001830       0xb0 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/stm32l4xx_hal_msp.c.obj
+                0x08001830                HAL_I2C_MspInit
  .text.Reset_Handler
-                0x080016e4       0x50 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/startup_stm32l432xx.s.obj
-                0x080016e4                Reset_Handler
+                0x080018e0       0x50 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/startup_stm32l432xx.s.obj
+                0x080018e0                Reset_Handler
  .text.Default_Handler
-                0x08001734        0x2 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/startup_stm32l432xx.s.obj
-                0x08001734                RTC_Alarm_IRQHandler
-                0x08001734                EXTI2_IRQHandler
-                0x08001734                TIM1_CC_IRQHandler
-                0x08001734                TSC_IRQHandler
-                0x08001734                TAMP_STAMP_IRQHandler
-                0x08001734                EXTI3_IRQHandler
-                0x08001734                LPTIM2_IRQHandler
-                0x08001734                I2C3_ER_IRQHandler
-                0x08001734                EXTI0_IRQHandler
-                0x08001734                CAN1_RX0_IRQHandler
-                0x08001734                FPU_IRQHandler
-                0x08001734                TIM1_UP_TIM16_IRQHandler
-                0x08001734                SPI1_IRQHandler
-                0x08001734                TIM6_DAC_IRQHandler
-                0x08001734                DMA2_Channel2_IRQHandler
-                0x08001734                DMA1_Channel4_IRQHandler
-                0x08001734                ADC1_IRQHandler
-                0x08001734                DMA1_Channel7_IRQHandler
-                0x08001734                CAN1_RX1_IRQHandler
-                0x08001734                DMA2_Channel1_IRQHandler
-                0x08001734                QUADSPI_IRQHandler
-                0x08001734                I2C1_EV_IRQHandler
-                0x08001734                DMA1_Channel6_IRQHandler
-                0x08001734                DMA2_Channel4_IRQHandler
-                0x08001734                RCC_IRQHandler
-                0x08001734                TIM1_TRG_COM_IRQHandler
-                0x08001734                Default_Handler
-                0x08001734                DMA2_Channel7_IRQHandler
-                0x08001734                EXTI15_10_IRQHandler
-                0x08001734                TIM7_IRQHandler
-                0x08001734                I2C3_EV_IRQHandler
-                0x08001734                USB_IRQHandler
-                0x08001734                EXTI9_5_IRQHandler
-                0x08001734                RTC_WKUP_IRQHandler
-                0x08001734                PVD_PVM_IRQHandler
-                0x08001734                CAN1_TX_IRQHandler
-                0x08001734                DMA2_Channel5_IRQHandler
-                0x08001734                CRS_IRQHandler
-                0x08001734                DMA1_Channel5_IRQHandler
-                0x08001734                EXTI4_IRQHandler
-                0x08001734                RNG_IRQHandler
-                0x08001734                DMA1_Channel3_IRQHandler
-                0x08001734                COMP_IRQHandler
-                0x08001734                WWDG_IRQHandler
-                0x08001734                LPUART1_IRQHandler
-                0x08001734                DMA2_Channel6_IRQHandler
-                0x08001734                TIM2_IRQHandler
-                0x08001734                EXTI1_IRQHandler
-                0x08001734                USART2_IRQHandler
-                0x08001734                DMA1_Channel2_IRQHandler
-                0x08001734                CAN1_SCE_IRQHandler
-                0x08001734                FLASH_IRQHandler
-                0x08001734                USART1_IRQHandler
-                0x08001734                SPI3_IRQHandler
-                0x08001734                I2C1_ER_IRQHandler
-                0x08001734                SWPMI1_IRQHandler
-                0x08001734                LPTIM1_IRQHandler
-                0x08001734                SAI1_IRQHandler
-                0x08001734                DMA2_Channel3_IRQHandler
-                0x08001734                TIM1_BRK_TIM15_IRQHandler
- *fill*         0x08001736        0x2 
+                0x08001930        0x2 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/startup_stm32l432xx.s.obj
+                0x08001930                RTC_Alarm_IRQHandler
+                0x08001930                EXTI2_IRQHandler
+                0x08001930                TIM1_CC_IRQHandler
+                0x08001930                TSC_IRQHandler
+                0x08001930                TAMP_STAMP_IRQHandler
+                0x08001930                EXTI3_IRQHandler
+                0x08001930                LPTIM2_IRQHandler
+                0x08001930                I2C3_ER_IRQHandler
+                0x08001930                EXTI0_IRQHandler
+                0x08001930                CAN1_RX0_IRQHandler
+                0x08001930                FPU_IRQHandler
+                0x08001930                TIM1_UP_TIM16_IRQHandler
+                0x08001930                SPI1_IRQHandler
+                0x08001930                TIM6_DAC_IRQHandler
+                0x08001930                DMA2_Channel2_IRQHandler
+                0x08001930                DMA1_Channel4_IRQHandler
+                0x08001930                ADC1_IRQHandler
+                0x08001930                DMA1_Channel7_IRQHandler
+                0x08001930                CAN1_RX1_IRQHandler
+                0x08001930                DMA2_Channel1_IRQHandler
+                0x08001930                QUADSPI_IRQHandler
+                0x08001930                I2C1_EV_IRQHandler
+                0x08001930                DMA1_Channel6_IRQHandler
+                0x08001930                DMA2_Channel4_IRQHandler
+                0x08001930                RCC_IRQHandler
+                0x08001930                TIM1_TRG_COM_IRQHandler
+                0x08001930                Default_Handler
+                0x08001930                DMA2_Channel7_IRQHandler
+                0x08001930                EXTI15_10_IRQHandler
+                0x08001930                TIM7_IRQHandler
+                0x08001930                I2C3_EV_IRQHandler
+                0x08001930                USB_IRQHandler
+                0x08001930                EXTI9_5_IRQHandler
+                0x08001930                RTC_WKUP_IRQHandler
+                0x08001930                PVD_PVM_IRQHandler
+                0x08001930                CAN1_TX_IRQHandler
+                0x08001930                DMA2_Channel5_IRQHandler
+                0x08001930                CRS_IRQHandler
+                0x08001930                DMA1_Channel5_IRQHandler
+                0x08001930                EXTI4_IRQHandler
+                0x08001930                RNG_IRQHandler
+                0x08001930                DMA1_Channel3_IRQHandler
+                0x08001930                COMP_IRQHandler
+                0x08001930                WWDG_IRQHandler
+                0x08001930                LPUART1_IRQHandler
+                0x08001930                DMA2_Channel6_IRQHandler
+                0x08001930                TIM2_IRQHandler
+                0x08001930                EXTI1_IRQHandler
+                0x08001930                USART2_IRQHandler
+                0x08001930                DMA1_Channel2_IRQHandler
+                0x08001930                CAN1_SCE_IRQHandler
+                0x08001930                FLASH_IRQHandler
+                0x08001930                USART1_IRQHandler
+                0x08001930                SPI3_IRQHandler
+                0x08001930                I2C1_ER_IRQHandler
+                0x08001930                SWPMI1_IRQHandler
+                0x08001930                LPTIM1_IRQHandler
+                0x08001930                SAI1_IRQHandler
+                0x08001930                DMA2_Channel3_IRQHandler
+                0x08001930                TIM1_BRK_TIM15_IRQHandler
+ *fill*         0x08001932        0x2 
  .text.SystemInit
-                0x08001738       0x20 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32l4xx.c.obj
-                0x08001738                SystemInit
+                0x08001934       0x20 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32l4xx.c.obj
+                0x08001934                SystemInit
  .text.LL_ADC_SetCommonClock
-                0x08001758       0x24 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
+                0x08001954       0x24 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
  .text.LL_ADC_SetCommonPathInternalCh
-                0x0800177c       0x24 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
+                0x08001978       0x24 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
  .text.LL_ADC_GetCommonPathInternalCh
-                0x080017a0       0x1a cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
- *fill*         0x080017ba        0x2 
+                0x0800199c       0x1a cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
+ *fill*         0x080019b6        0x2 
  .text.LL_ADC_SetOffset
-                0x080017bc       0x44 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
+                0x080019b8       0x44 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
  .text.LL_ADC_GetOffsetChannel
-                0x08001800       0x28 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
+                0x080019fc       0x28 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
  .text.LL_ADC_SetOffsetState
-                0x08001828       0x32 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
+                0x08001a24       0x32 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
  .text.LL_ADC_REG_SetSequencerRanks
-                0x0800185a       0x54 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
+                0x08001a56       0x54 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
  .text.LL_ADC_SetChannelSamplingTime
-                0x080018ae       0x52 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
+                0x08001aaa       0x52 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
  .text.LL_ADC_SetChannelSingleDiff
-                0x08001900       0x44 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
+                0x08001afc       0x44 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
  .text.LL_ADC_DisableDeepPowerDown
-                0x08001944       0x22 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
+                0x08001b40       0x22 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
  .text.LL_ADC_IsDeepPowerDownEnabled
-                0x08001966       0x26 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
+                0x08001b62       0x26 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
  .text.LL_ADC_EnableInternalRegulator
-                0x0800198c       0x26 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
+                0x08001b88       0x26 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
  .text.LL_ADC_IsInternalRegulatorEnabled
-                0x080019b2       0x26 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
+                0x08001bae       0x26 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
  .text.LL_ADC_IsEnabled
-                0x080019d8       0x24 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
+                0x08001bd4       0x24 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
  .text.LL_ADC_REG_IsConversionOngoing
-                0x080019fc       0x24 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
+                0x08001bf8       0x24 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
  .text.LL_ADC_INJ_IsConversionOngoing
-                0x08001a20       0x24 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
+                0x08001c1c       0x24 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
  .text.HAL_ADC_Init
-                0x08001a44      0x284 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
-                0x08001a44                HAL_ADC_Init
+                0x08001c40      0x284 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
+                0x08001c40                HAL_ADC_Init
  .text.HAL_ADC_ConfigChannel
-                0x08001cc8      0x7c4 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
-                0x08001cc8                HAL_ADC_ConfigChannel
+                0x08001ec4      0x7c4 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
+                0x08001ec4                HAL_ADC_ConfigChannel
  .text.HAL_Init
-                0x0800248c       0x30 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
-                0x0800248c                HAL_Init
+                0x08002688       0x30 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
+                0x08002688                HAL_Init
  .text.HAL_InitTick
-                0x080024bc       0x78 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
-                0x080024bc                HAL_InitTick
+                0x080026b8       0x78 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
+                0x080026b8                HAL_InitTick
  .text.HAL_IncTick
-                0x08002534       0x24 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
-                0x08002534                HAL_IncTick
+                0x08002730       0x24 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
+                0x08002730                HAL_IncTick
  .text.HAL_GetTick
-                0x08002558       0x14 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
-                0x08002558                HAL_GetTick
+                0x08002754       0x14 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
+                0x08002754                HAL_GetTick
  .text.HAL_Delay
-                0x0800256c       0x48 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
-                0x0800256c                HAL_Delay
+                0x08002768       0x48 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
+                0x08002768                HAL_Delay
  .text.HAL_RCC_OscConfig
-                0x080025b4      0x828 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
-                0x080025b4                HAL_RCC_OscConfig
+                0x080027b0      0x828 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
+                0x080027b0                HAL_RCC_OscConfig
  .text.HAL_RCC_ClockConfig
-                0x08002ddc      0x200 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
-                0x08002ddc                HAL_RCC_ClockConfig
+                0x08002fd8      0x200 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
+                0x08002fd8                HAL_RCC_ClockConfig
  .text.HAL_RCC_GetSysClockFreq
-                0x08002fdc      0x114 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
-                0x08002fdc                HAL_RCC_GetSysClockFreq
+                0x080031d8      0x114 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
+                0x080031d8                HAL_RCC_GetSysClockFreq
  .text.RCC_SetFlashLatencyFromMSIRange
-                0x080030f0       0xc0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
+                0x080032ec       0xc0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
  .text.HAL_RCCEx_PeriphCLKConfig
-                0x080031b0      0x3ec cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj
-                0x080031b0                HAL_RCCEx_PeriphCLKConfig
+                0x080033ac      0x3ec cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj
+                0x080033ac                HAL_RCCEx_PeriphCLKConfig
  .text.RCCEx_PLLSAI1_Config
-                0x0800359c      0x1e4 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj
+                0x08003798      0x1e4 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj
  .text.HAL_GPIO_Init
-                0x08003780      0x2d4 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj
-                0x08003780                HAL_GPIO_Init
+                0x0800397c      0x2d4 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj
+                0x0800397c                HAL_GPIO_Init
  .text.HAL_GPIO_WritePin
-                0x08003a54       0x2e cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj
-                0x08003a54                HAL_GPIO_WritePin
+                0x08003c50       0x2e cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj
+                0x08003c50                HAL_GPIO_WritePin
  .text.HAL_GPIO_TogglePin
-                0x08003a82       0x32 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj
-                0x08003a82                HAL_GPIO_TogglePin
+                0x08003c7e       0x32 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj
+                0x08003c7e                HAL_GPIO_TogglePin
  .text.HAL_I2C_Init
-                0x08003ab4      0x134 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.obj
-                0x08003ab4                HAL_I2C_Init
+                0x08003cb0      0x134 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.obj
+                0x08003cb0                HAL_I2C_Init
  .text.HAL_I2C_Master_Transmit
-                0x08003be8      0x21c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.obj
-                0x08003be8                HAL_I2C_Master_Transmit
+                0x08003de4      0x21c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.obj
+                0x08003de4                HAL_I2C_Master_Transmit
  .text.I2C_Flush_TXDR
-                0x08003e04       0x46 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.obj
+                0x08004000       0x46 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.obj
  .text.I2C_WaitOnFlagUntilTimeout
-                0x08003e4a       0xb2 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.obj
+                0x08004046       0xb2 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.obj
  .text.I2C_WaitOnTXISFlagUntilTimeout
-                0x08003efc       0x8e cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.obj
+                0x080040f8       0x8e cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.obj
  .text.I2C_WaitOnSTOPFlagUntilTimeout
-                0x08003f8a       0x86 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.obj
+                0x08004186       0x86 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.obj
  .text.I2C_IsErrorOccurred
-                0x08004010      0x1c0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.obj
+                0x0800420c      0x1c0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.obj
  .text.I2C_TransferConfig
-                0x080041d0       0x60 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.obj
+                0x080043cc       0x60 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.obj
  .text.HAL_I2CEx_ConfigAnalogFilter
-                0x08004230       0x92 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c.obj
-                0x08004230                HAL_I2CEx_ConfigAnalogFilter
+                0x0800442c       0x92 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c.obj
+                0x0800442c                HAL_I2CEx_ConfigAnalogFilter
  .text.HAL_I2CEx_ConfigDigitalFilter
-                0x080042c2       0x94 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c.obj
-                0x080042c2                HAL_I2CEx_ConfigDigitalFilter
- *fill*         0x08004356        0x2 
+                0x080044be       0x94 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c.obj
+                0x080044be                HAL_I2CEx_ConfigDigitalFilter
+ *fill*         0x08004552        0x2 
  .text.HAL_DMA_Init
-                0x08004358      0x170 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c.obj
-                0x08004358                HAL_DMA_Init
+                0x08004554      0x170 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c.obj
+                0x08004554                HAL_DMA_Init
  .text.HAL_DMA_IRQHandler
-                0x080044c8      0x18c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c.obj
-                0x080044c8                HAL_DMA_IRQHandler
+                0x080046c4      0x18c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c.obj
+                0x080046c4                HAL_DMA_IRQHandler
  .text.HAL_PWREx_GetVoltageRange
-                0x08004654       0x18 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj
-                0x08004654                HAL_PWREx_GetVoltageRange
+                0x08004850       0x18 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj
+                0x08004850                HAL_PWREx_GetVoltageRange
  .text.HAL_PWREx_ControlVoltageScaling
-                0x0800466c       0xa8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj
-                0x0800466c                HAL_PWREx_ControlVoltageScaling
+                0x08004868       0xa8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj
+                0x08004868                HAL_PWREx_ControlVoltageScaling
  .text.__NVIC_SetPriorityGrouping
-                0x08004714       0x48 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
+                0x08004910       0x48 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
  .text.__NVIC_GetPriorityGrouping
-                0x0800475c       0x1c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
+                0x08004958       0x1c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
  .text.__NVIC_EnableIRQ
-                0x08004778       0x38 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
+                0x08004974       0x38 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
  .text.__NVIC_SetPriority
-                0x080047b0       0x54 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
+                0x080049ac       0x54 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
  .text.NVIC_EncodePriority
-                0x08004804       0x6e cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
- *fill*         0x08004872        0x2 
+                0x08004a00       0x6e cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
+ *fill*         0x08004a6e        0x2 
  .text.SysTick_Config
-                0x08004874       0x44 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
+                0x08004a70       0x44 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
  .text.HAL_NVIC_SetPriorityGrouping
-                0x080048b8       0x16 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
-                0x080048b8                HAL_NVIC_SetPriorityGrouping
+                0x08004ab4       0x16 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
+                0x08004ab4                HAL_NVIC_SetPriorityGrouping
  .text.HAL_NVIC_SetPriority
-                0x080048ce       0x38 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
-                0x080048ce                HAL_NVIC_SetPriority
+                0x08004aca       0x38 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
+                0x08004aca                HAL_NVIC_SetPriority
  .text.HAL_NVIC_EnableIRQ
-                0x08004906       0x1c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
-                0x08004906                HAL_NVIC_EnableIRQ
+                0x08004b02       0x1c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
+                0x08004b02                HAL_NVIC_EnableIRQ
  .text.HAL_SYSTICK_Config
-                0x08004922       0x18 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
-                0x08004922                HAL_SYSTICK_Config
- *fill*         0x0800493a        0x2 
+                0x08004b1e       0x18 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
+                0x08004b1e                HAL_SYSTICK_Config
+ *fill*         0x08004b36        0x2 
  .text.BSP_LED_Init
-                0x0800493c       0x68 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/BSP/STM32L4xx_Nucleo_32/stm32l4xx_nucleo_32.c.obj
-                0x0800493c                BSP_LED_Init
- *fill*         0x080049a4        0x4 
- .text.log      0x080049a8       0x8c /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-w_log.o)
-                0x080049a8                log
- *fill*         0x08004a34        0x4 
- .text.nan      0x08004a38       0x10 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-s_nan.o)
-                0x08004a38                nan
- .text.roundf   0x08004a48       0x48 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_round.o)
-                0x08004a48                roundf
+                0x08004b38       0x68 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/BSP/STM32L4xx_Nucleo_32/stm32l4xx_nucleo_32.c.obj
+                0x08004b38                BSP_LED_Init
+ .text.log      0x08004ba0       0x8c /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-w_log.o)
+                0x08004ba0                log
+ *fill*         0x08004c2c        0x4 
+ .text.nan      0x08004c30       0x10 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-s_nan.o)
+                0x08004c30                nan
+ .text.roundf   0x08004c40       0x48 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_round.o)
+                0x08004c40                roundf
  .text.__ieee754_log
-                0x08004a90      0x408 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-e_log.o)
-                0x08004a90                __ieee754_log
- .text.arm_cmplx_mag_f32
-                0x08004e98      0x210 bin_dsp/libCMSISDSP.a(arm_cmplx_mag_f32.c.obj)
-                0x08004e98                arm_cmplx_mag_f32
- .text.stage_rfft_f32
-                0x080050a8      0x1d0 bin_dsp/libCMSISDSP.a(arm_rfft_fast_f32.c.obj)
- .text.merge_rfft_f32
-                0x08005278      0x196 bin_dsp/libCMSISDSP.a(arm_rfft_fast_f32.c.obj)
- .text.arm_rfft_fast_f32
-                0x0800540e       0x4e bin_dsp/libCMSISDSP.a(arm_rfft_fast_f32.c.obj)
-                0x0800540e                arm_rfft_fast_f32
- .text.arm_rfft_fast_init_32_f32
-                0x0800545c       0x48 bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
-                0x0800545c                arm_rfft_fast_init_32_f32
- .text.arm_rfft_fast_init_64_f32
-                0x080054a4       0x48 bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
-                0x080054a4                arm_rfft_fast_init_64_f32
- .text.arm_rfft_fast_init_128_f32
-                0x080054ec       0x48 bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
-                0x080054ec                arm_rfft_fast_init_128_f32
- .text.arm_rfft_fast_init_256_f32
-                0x08005534       0x4c bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
-                0x08005534                arm_rfft_fast_init_256_f32
- .text.arm_rfft_fast_init_512_f32
-                0x08005580       0x4c bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
-                0x08005580                arm_rfft_fast_init_512_f32
- .text.arm_rfft_fast_init_1024_f32
-                0x080055cc       0x4c bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
-                0x080055cc                arm_rfft_fast_init_1024_f32
- .text.arm_rfft_fast_init_2048_f32
-                0x08005618       0x4c bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
-                0x08005618                arm_rfft_fast_init_2048_f32
- .text.arm_rfft_fast_init_4096_f32
-                0x08005664       0x4c bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
-                0x08005664                arm_rfft_fast_init_4096_f32
- .text.arm_rfft_fast_init_f32
-                0x080056b0       0xce bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
-                0x080056b0                arm_rfft_fast_init_f32
- .text.arm_cfft_radix8by2_f32
-                0x0800577e      0x3e8 bin_dsp/libCMSISDSP.a(arm_cfft_f32.c.obj)
- .text.arm_cfft_radix8by4_f32
-                0x08005b66      0xc60 bin_dsp/libCMSISDSP.a(arm_cfft_f32.c.obj)
- .text.arm_cfft_f32
-                0x080067c6      0x174 bin_dsp/libCMSISDSP.a(arm_cfft_f32.c.obj)
-                0x080067c6                arm_cfft_f32
- *fill*         0x0800693a        0x2 
- .text.arm_cfft_init_2048_f32
-                0x0800693c       0x44 bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
-                0x0800693c                arm_cfft_init_2048_f32
- .text.arm_cfft_init_1024_f32
-                0x08006980       0x44 bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
-                0x08006980                arm_cfft_init_1024_f32
- .text.arm_cfft_init_512_f32
-                0x080069c4       0x44 bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
-                0x080069c4                arm_cfft_init_512_f32
- .text.arm_cfft_init_256_f32
-                0x08006a08       0x44 bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
-                0x08006a08                arm_cfft_init_256_f32
- .text.arm_cfft_init_128_f32
-                0x08006a4c       0x44 bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
-                0x08006a4c                arm_cfft_init_128_f32
- .text.arm_cfft_init_64_f32
-                0x08006a90       0x44 bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
-                0x08006a90                arm_cfft_init_64_f32
- .text.arm_cfft_init_32_f32
-                0x08006ad4       0x44 bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
-                0x08006ad4                arm_cfft_init_32_f32
- .text.arm_cfft_init_16_f32
-                0x08006b18       0x44 bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
-                0x08006b18                arm_cfft_init_16_f32
- .text.arm_bitreversal_32
-                0x08006b5c       0xb0 bin_dsp/libCMSISDSP.a(arm_bitreversal2.c.obj)
-                0x08006b5c                arm_bitreversal_32
- .text.arm_radix8_butterfly_f32
-                0x08006c0c     0x1008 bin_dsp/libCMSISDSP.a(arm_cfft_radix8_f32.c.obj)
-                0x08006c0c                arm_radix8_butterfly_f32
- .text.memset   0x08007c14       0x10 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
-                0x08007c14                memset
- .text.__errno  0x08007c24        0xc /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-errno.o)
-                0x08007c24                __errno
+                0x08004c88      0x408 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-e_log.o)
+                0x08004c88                __ieee754_log
+ .text.memset   0x08005090       0x10 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
+                0x08005090                memset
+ .text.__errno  0x080050a0        0xc /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-errno.o)
+                0x080050a0                __errno
  .text.__libc_init_array
-                0x08007c30       0x48 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
-                0x08007c30                __libc_init_array
+                0x080050ac       0x48 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
+                0x080050ac                __libc_init_array
  *(.glue_7)
- .glue_7        0x08007c78        0x0 linker stubs
+ .glue_7        0x080050f4        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x08007c78        0x0 linker stubs
+ .glue_7t       0x080050f4        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x08007c78        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtbegin.o
+ .eh_frame      0x080050f4        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtbegin.o
  *(.init)
- .init          0x08007c78        0x4 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crti.o
-                0x08007c78                _init
- .init          0x08007c7c        0x8 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtn.o
+ .init          0x080050f4        0x4 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crti.o
+                0x080050f4                _init
+ .init          0x080050f8        0x8 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtn.o
  *(.fini)
- .fini          0x08007c84        0x4 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crti.o
-                0x08007c84                _fini
- .fini          0x08007c88        0x8 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtn.o
-                0x08007c90                        . = ALIGN (0x8)
-                0x08007c90                        _etext = .
+ .fini          0x08005100        0x4 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crti.o
+                0x08005100                _fini
+ .fini          0x08005104        0x8 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtn.o
+                0x08005110                        . = ALIGN (0x8)
+ *fill*         0x0800510c        0x4 
+                0x08005110                        _etext = .
 
-.vfp11_veneer   0x08007c90        0x0
- .vfp11_veneer  0x08007c90        0x0 linker stubs
+.vfp11_veneer   0x08005110        0x0
+ .vfp11_veneer  0x08005110        0x0 linker stubs
 
-.v4_bx          0x08007c90        0x0
- .v4_bx         0x08007c90        0x0 linker stubs
+.v4_bx          0x08005110        0x0
+ .v4_bx         0x08005110        0x0 linker stubs
 
-.iplt           0x08007c90        0x0
- .iplt          0x08007c90        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtbegin.o
+.iplt           0x08005110        0x0
+ .iplt          0x08005110        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtbegin.o
 
-.rodata         0x08007c90    0x14b58
-                0x08007c90                        . = ALIGN (0x8)
+.rodata         0x08005110     0x1680
+                0x08005110                        . = ALIGN (0x8)
  *(.rodata)
- .rodata        0x08007c90       0xe1 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
+ .rodata        0x08005110       0xe1 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
  *(.rodata*)
- *fill*         0x08007d71        0x3 
- .rodata.FONT   0x08007d74      0xc00 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
-                0x08007d74                FONT
- .rodata.notes  0x08008974      0x154 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
-                0x08008974                notes
- .rodata.adc_sine_440hz
-                0x08008ac8      0x800 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
+ *fill*         0x080051f1        0x3 
+ .rodata.FONT   0x080051f4      0xc00 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
+                0x080051f4                FONT
+ .rodata.notes  0x08005df4      0x154 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
+                0x08005df4                notes
+ .rodata.adc_sine_220hz
+                0x08005f48      0x800 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
  .rodata.AHBPrescTable
-                0x080092c8       0x10 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32l4xx.c.obj
-                0x080092c8                AHBPrescTable
+                0x08006748       0x10 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32l4xx.c.obj
+                0x08006748                AHBPrescTable
  .rodata.MSIRangeTable
-                0x080092d8       0x30 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32l4xx.c.obj
-                0x080092d8                MSIRangeTable
+                0x08006758       0x30 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32l4xx.c.obj
+                0x08006758                MSIRangeTable
  .rodata.log.str1.4
-                0x08009308        0x1 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-w_log.o)
- *fill*         0x08009309        0x3 
- .rodata.twiddleCoef_16
-                0x0800930c       0x80 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
-                0x0800930c                twiddleCoef_16
- .rodata.twiddleCoef_32
-                0x0800938c      0x100 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
-                0x0800938c                twiddleCoef_32
- .rodata.twiddleCoef_64
-                0x0800948c      0x200 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
-                0x0800948c                twiddleCoef_64
- .rodata.twiddleCoef_128
-                0x0800968c      0x400 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
-                0x0800968c                twiddleCoef_128
- .rodata.twiddleCoef_256
-                0x08009a8c      0x800 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
-                0x08009a8c                twiddleCoef_256
- .rodata.twiddleCoef_512
-                0x0800a28c     0x1000 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
-                0x0800a28c                twiddleCoef_512
- .rodata.twiddleCoef_1024
-                0x0800b28c     0x2000 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
-                0x0800b28c                twiddleCoef_1024
- .rodata.twiddleCoef_2048
-                0x0800d28c     0x4000 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
-                0x0800d28c                twiddleCoef_2048
- .rodata.armBitRevIndexTable16
-                0x0801128c       0x28 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
-                0x0801128c                armBitRevIndexTable16
- .rodata.armBitRevIndexTable32
-                0x080112b4       0x60 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
-                0x080112b4                armBitRevIndexTable32
- .rodata.armBitRevIndexTable64
-                0x08011314       0x70 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
-                0x08011314                armBitRevIndexTable64
- .rodata.armBitRevIndexTable128
-                0x08011384      0x1a0 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
-                0x08011384                armBitRevIndexTable128
- .rodata.armBitRevIndexTable256
-                0x08011524      0x370 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
-                0x08011524                armBitRevIndexTable256
- .rodata.armBitRevIndexTable512
-                0x08011894      0x380 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
-                0x08011894                armBitRevIndexTable512
- .rodata.armBitRevIndexTable1024
-                0x08011c14      0xe10 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
-                0x08011c14                armBitRevIndexTable1024
- .rodata.armBitRevIndexTable2048
-                0x08012a24     0x1dc0 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
-                0x08012a24                armBitRevIndexTable2048
- .rodata.twiddleCoef_rfft_32
-                0x080147e4       0x80 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
-                0x080147e4                twiddleCoef_rfft_32
- .rodata.twiddleCoef_rfft_64
-                0x08014864      0x100 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
-                0x08014864                twiddleCoef_rfft_64
- .rodata.twiddleCoef_rfft_128
-                0x08014964      0x200 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
-                0x08014964                twiddleCoef_rfft_128
- .rodata.twiddleCoef_rfft_256
-                0x08014b64      0x400 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
-                0x08014b64                twiddleCoef_rfft_256
- .rodata.twiddleCoef_rfft_512
-                0x08014f64      0x800 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
-                0x08014f64                twiddleCoef_rfft_512
- .rodata.twiddleCoef_rfft_1024
-                0x08015764     0x1000 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
-                0x08015764                twiddleCoef_rfft_1024
- .rodata.twiddleCoef_rfft_2048
-                0x08016764     0x2000 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
-                0x08016764                twiddleCoef_rfft_2048
- .rodata.twiddleCoef_rfft_4096
-                0x08018764     0x4000 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
-                0x08018764                twiddleCoef_rfft_4096
- .rodata.arm_cfft_sR_f32_len16
-                0x0801c764       0x10 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
-                0x0801c764                arm_cfft_sR_f32_len16
- .rodata.arm_cfft_sR_f32_len32
-                0x0801c774       0x10 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
-                0x0801c774                arm_cfft_sR_f32_len32
- .rodata.arm_cfft_sR_f32_len64
-                0x0801c784       0x10 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
-                0x0801c784                arm_cfft_sR_f32_len64
- .rodata.arm_cfft_sR_f32_len128
-                0x0801c794       0x10 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
-                0x0801c794                arm_cfft_sR_f32_len128
- .rodata.arm_cfft_sR_f32_len256
-                0x0801c7a4       0x10 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
-                0x0801c7a4                arm_cfft_sR_f32_len256
- .rodata.arm_cfft_sR_f32_len512
-                0x0801c7b4       0x10 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
-                0x0801c7b4                arm_cfft_sR_f32_len512
- .rodata.arm_cfft_sR_f32_len1024
-                0x0801c7c4       0x10 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
-                0x0801c7c4                arm_cfft_sR_f32_len1024
- .rodata.arm_cfft_sR_f32_len2048
-                0x0801c7d4       0x10 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
-                0x0801c7d4                arm_cfft_sR_f32_len2048
-                0x0801c7e8                        . = ALIGN (0x8)
- *fill*         0x0801c7e4        0x4 
+                0x08006788        0x1 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-w_log.o)
+                0x08006790                        . = ALIGN (0x8)
+ *fill*         0x08006789        0x7 
 
-.ARM.extab      0x0801c7e8        0x0
-                0x0801c7e8                        . = ALIGN (0x8)
+.ARM.extab      0x08006790        0x0
+                0x08006790                        . = ALIGN (0x8)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x0801c7e8                        . = ALIGN (0x8)
+                0x08006790                        . = ALIGN (0x8)
 
-.ARM            0x0801c7e8        0x0
-                0x0801c7e8                        . = ALIGN (0x8)
-                0x0801c7e8                        __exidx_start = .
+.ARM            0x08006790        0x0
+                0x08006790                        . = ALIGN (0x8)
+                0x08006790                        __exidx_start = .
  *(.ARM.exidx*)
-                0x0801c7e8                        __exidx_end = .
-                0x0801c7e8                        . = ALIGN (0x8)
+                0x08006790                        __exidx_end = .
+                0x08006790                        . = ALIGN (0x8)
 
-.preinit_array  0x0801c7e8        0x0
-                0x0801c7e8                        . = ALIGN (0x8)
-                0x0801c7e8                        PROVIDE (__preinit_array_start = .)
+.preinit_array  0x08006790        0x0
+                0x08006790                        . = ALIGN (0x8)
+                0x08006790                        PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x0801c7e8                        PROVIDE (__preinit_array_end = .)
-                0x0801c7e8                        . = ALIGN (0x8)
+                0x08006790                        PROVIDE (__preinit_array_end = .)
+                0x08006790                        . = ALIGN (0x8)
 
-.init_array     0x0801c7e8        0x8
-                0x0801c7e8                        . = ALIGN (0x8)
-                0x0801c7e8                        PROVIDE (__init_array_start = .)
+.init_array     0x08006790        0x8
+                0x08006790                        . = ALIGN (0x8)
+                0x08006790                        PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
- .init_array    0x0801c7e8        0x4 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtbegin.o
-                0x0801c7ec                        PROVIDE (__init_array_end = .)
-                0x0801c7f0                        . = ALIGN (0x8)
- *fill*         0x0801c7ec        0x4 
+ .init_array    0x08006790        0x4 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtbegin.o
+                0x08006794                        PROVIDE (__init_array_end = .)
+                0x08006798                        . = ALIGN (0x8)
+ *fill*         0x08006794        0x4 
 
-.fini_array     0x0801c7f0        0x8
-                0x0801c7f0                        . = ALIGN (0x8)
-                0x0801c7f0                        PROVIDE (__fini_array_start = .)
+.fini_array     0x08006798        0x8
+                0x08006798                        . = ALIGN (0x8)
+                0x08006798                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x0801c7f0        0x4 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtbegin.o
-                0x0801c7f4                        PROVIDE (__fini_array_end = .)
-                0x0801c7f8                        . = ALIGN (0x8)
- *fill*         0x0801c7f4        0x4 
-                0x0801c7f8                        _sidata = LOADADDR (.data)
+ .fini_array    0x08006798        0x4 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtbegin.o
+                0x0800679c                        PROVIDE (__fini_array_end = .)
+                0x080067a0                        . = ALIGN (0x8)
+ *fill*         0x0800679c        0x4 
+                0x080067a0                        _sidata = LOADADDR (.data)
 
-.rel.dyn        0x0801c7f8        0x0
- .rel.iplt      0x0801c7f8        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtbegin.o
+.rel.dyn        0x080067a0        0x0
+ .rel.iplt      0x080067a0        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtbegin.o
 
-.data           0x20000000       0x60 load address 0x0801c7f8
+.data           0x20000000       0x68 load address 0x080067a0
                 0x20000000                        . = ALIGN (0x8)
                 0x20000000                        _sdata = .
  *(.data)
  *(.data*)
+ .data.threshold
+                0x20000000        0x4 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
+                0x20000000                threshold
  .data.SystemCoreClock
-                0x20000000        0x4 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32l4xx.c.obj
-                0x20000000                SystemCoreClock
+                0x20000004        0x4 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32l4xx.c.obj
+                0x20000004                SystemCoreClock
  .data.uwTickPrio
-                0x20000004        0x4 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
-                0x20000004                uwTickPrio
+                0x20000008        0x4 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
+                0x20000008                uwTickPrio
  .data.uwTickFreq
-                0x20000008        0x1 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
-                0x20000008                uwTickFreq
- *fill*         0x20000009        0x3 
+                0x2000000c        0x1 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
+                0x2000000c                uwTickFreq
+ *fill*         0x2000000d        0x3 
  .data.LED_PORT
-                0x2000000c        0x4 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/BSP/STM32L4xx_Nucleo_32/stm32l4xx_nucleo_32.c.obj
-                0x2000000c                LED_PORT
+                0x20000010        0x4 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/BSP/STM32L4xx_Nucleo_32/stm32l4xx_nucleo_32.c.obj
+                0x20000010                LED_PORT
  .data._impure_ptr
-                0x20000010        0x4 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-impure.o)
-                0x20000010                _impure_ptr
+                0x20000014        0x4 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-impure.o)
+                0x20000014                _impure_ptr
  .data._impure_data
-                0x20000014       0x4c /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-impure.o)
-                0x20000014                _impure_data
+                0x20000018       0x4c /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-impure.o)
+                0x20000018                _impure_data
  *(.RamFunc)
  *(.RamFunc*)
-                0x20000060                        . = ALIGN (0x8)
+                0x20000068                        . = ALIGN (0x8)
+ *fill*         0x20000064        0x4 
 
-.igot.plt       0x20000060        0x0 load address 0x0801c858
- .igot.plt      0x20000060        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtbegin.o
+.igot.plt       0x20000068        0x0 load address 0x08006808
+ .igot.plt      0x20000068        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtbegin.o
 
-.tdata          0x20000060        0x0 load address 0x0801c858
+.tdata          0x20000068        0x0 load address 0x08006808
  *(.tdata .tdata.* .gnu.linkonce.td.*)
-                0x20000060                        . = ALIGN (0x4)
-                0x20000060                        _edata = .
+                0x20000068                        . = ALIGN (0x4)
+                0x20000068                        _edata = .
                 [!provide]                        PROVIDE (__data_end = .)
                 [!provide]                        PROVIDE (__tdata_end = .)
                 [!provide]                        PROVIDE (__tdata_start = ADDR (.tdata))
@@ -5158,11 +4520,11 @@ LOAD /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtn.o
                 [!provide]                        PROVIDE (__data_source_end = __tdata_source_end)
                 [!provide]                        PROVIDE (__data_source_size = (__data_source_end - __data_source))
 
-.tbss           0x20000060        0x0 load address 0x0801c858
-                0x20000060                        _sbss = .
-                0x20000060                        __bss_start__ = _sbss
+.tbss           0x20000068        0x0 load address 0x08006808
+                0x20000068                        _sbss = .
+                0x20000068                        __bss_start__ = _sbss
  *(.tbss .tbss.*)
-                0x20000060                        . = ALIGN (0x4)
+                0x20000068                        . = ALIGN (0x4)
                 [!provide]                        PROVIDE (__tbss_end = .)
                 [!provide]                        PROVIDE (__tbss_start = ADDR (.tbss))
                 [!provide]                        PROVIDE (__tbss_size = (__tbss_end - __tbss_start))
@@ -5175,55 +4537,57 @@ LOAD /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtn.o
                 [!provide]                        PROVIDE (__arm32_tls_tcb_offset = MAX (0x8, __tls_align))
                 [!provide]                        PROVIDE (__arm64_tls_tcb_offset = MAX (0x10, __tls_align))
 
-.bss            0x20000060     0x3670 load address 0x0801c858
+.bss            0x20000068     0x1664 load address 0x08006808
  *(.bss)
  *(.bss*)
  .bss.completed.1
-                0x20000060        0x1 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtbegin.o
- *fill*         0x20000061        0x3 
- .bss.object.0  0x20000064       0x18 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtbegin.o
- .bss.hadc1     0x2000007c       0x64 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
-                0x2000007c                hadc1
+                0x20000068        0x1 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtbegin.o
+ *fill*         0x20000069        0x3 
+ .bss.object.0  0x2000006c       0x18 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtbegin.o
+ .bss.hadc1     0x20000084       0x64 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
+                0x20000084                hadc1
  .bss.hdma_adc1
-                0x200000e0       0x48 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
-                0x200000e0                hdma_adc1
- .bss.hi2c1     0x20000128       0x54 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
-                0x20000128                hi2c1
+                0x200000e8       0x48 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
+                0x200000e8                hdma_adc1
+ .bss.hi2c1     0x20000130       0x54 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
+                0x20000130                hi2c1
  .bss.framebuffer
-                0x2000017c      0x400 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
-                0x2000017c                framebuffer
- .bss.fft       0x2000057c       0x18 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
-                0x2000057c                fft
- .bss.inputF    0x20000594     0x1000 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
-                0x20000594                inputF
- .bss.powerBuff
-                0x20001594     0x1000 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
-                0x20001594                powerBuff
- .bss.destBuff  0x20002594     0x1000 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
-                0x20002594                destBuff
- .bss.uwTick    0x20003594        0x4 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
-                0x20003594                uwTick
- .bss.__sf      0x20003598      0x138 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
-                0x20003598                __sf
+                0x20000184      0x400 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
+                0x20000184                framebuffer
+ .bss.destBuff  0x20000584     0x1000 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
+                0x20000584                destBuff
+ .bss.basicPitch
+                0x20001584        0x4 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
+                0x20001584                basicPitch
+ .bss.prob      0x20001588        0x4 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
+                0x20001588                prob
+ .bss.interPitch
+                0x2000158c        0x4 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
+                0x2000158c                interPitch
+ .bss.uwTick    0x20001590        0x4 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
+                0x20001590                uwTick
+ .bss.__sf      0x20001594      0x138 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
+                0x20001594                __sf
  *(COMMON)
-                0x200036d0                        . = ALIGN (0x4)
-                0x200036d0                        _ebss = .
-                0x200036d0                        __bss_end__ = _ebss
+                0x200016cc                        . = ALIGN (0x4)
+                0x200016cc                        _ebss = .
+                0x200016cc                        __bss_end__ = _ebss
                 [!provide]                        PROVIDE (__bss_end = .)
                 [!provide]                        PROVIDE (__non_tls_bss_start = ADDR (.bss))
                 [!provide]                        PROVIDE (__bss_start = __tbss_start)
                 [!provide]                        PROVIDE (__bss_size = (__bss_end - __bss_start))
 
 ._user_heap_stack
-                0x200036d0      0x600 load address 0x0801c858
-                0x200036d0                        . = ALIGN (0x8)
+                0x200016cc      0x604 load address 0x08006808
+                0x200016d0                        . = ALIGN (0x8)
+ *fill*         0x200016cc        0x4 
                 [!provide]                        PROVIDE (end = .)
-                0x200036d0                        PROVIDE (_end = .)
-                0x200038d0                        . = (. + _Min_Heap_Size)
- *fill*         0x200036d0      0x200 
-                0x20003cd0                        . = (. + _Min_Stack_Size)
- *fill*         0x200038d0      0x400 
-                0x20003cd0                        . = ALIGN (0x8)
+                0x200016d0                        PROVIDE (_end = .)
+                0x200018d0                        . = (. + _Min_Heap_Size)
+ *fill*         0x200016d0      0x200 
+                0x20001cd0                        . = (. + _Min_Stack_Size)
+ *fill*         0x200018d0      0x400 
+                0x20001cd0                        . = ALIGN (0x8)
 
 /DISCARD/
  libc.a:*(*)
@@ -5279,45 +4643,27 @@ LOAD linker stubs
  .ARM.attributes
                 0x0000041f       0x34 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-e_log.o)
  .ARM.attributes
-                0x00000453       0x34 bin_dsp/libCMSISDSP.a(arm_cmplx_mag_f32.c.obj)
+                0x00000453       0x22 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_addsubdf3.o)
  .ARM.attributes
-                0x00000487       0x34 bin_dsp/libCMSISDSP.a(arm_rfft_fast_f32.c.obj)
+                0x00000475       0x22 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_muldivdf3.o)
  .ARM.attributes
-                0x000004bb       0x34 bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
+                0x00000497       0x22 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_cmpdf2.o)
  .ARM.attributes
-                0x000004ef       0x34 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
+                0x000004b9       0x22 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_unorddf2.o)
  .ARM.attributes
-                0x00000523       0x34 bin_dsp/libCMSISDSP.a(arm_cfft_f32.c.obj)
+                0x000004db       0x22 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_truncdfsf2.o)
  .ARM.attributes
-                0x00000557       0x34 bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
+                0x000004fd       0x34 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
  .ARM.attributes
-                0x0000058b       0x34 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
+                0x00000531       0x34 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
  .ARM.attributes
-                0x000005bf       0x34 bin_dsp/libCMSISDSP.a(arm_bitreversal2.c.obj)
+                0x00000565       0x34 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-impure.o)
  .ARM.attributes
-                0x000005f3       0x34 bin_dsp/libCMSISDSP.a(arm_cfft_radix8_f32.c.obj)
+                0x00000599       0x34 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-errno.o)
  .ARM.attributes
-                0x00000627       0x22 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_addsubdf3.o)
+                0x000005cd       0x34 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
  .ARM.attributes
-                0x00000649       0x22 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_muldivdf3.o)
- .ARM.attributes
-                0x0000066b       0x22 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_cmpdf2.o)
- .ARM.attributes
-                0x0000068d       0x22 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_unorddf2.o)
- .ARM.attributes
-                0x000006af       0x22 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_truncdfsf2.o)
- .ARM.attributes
-                0x000006d1       0x34 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
- .ARM.attributes
-                0x00000705       0x34 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
- .ARM.attributes
-                0x00000739       0x34 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-impure.o)
- .ARM.attributes
-                0x0000076d       0x34 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-errno.o)
- .ARM.attributes
-                0x000007a1       0x34 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
- .ARM.attributes
-                0x000007d5       0x22 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtn.o
+                0x00000601       0x22 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtn.o
 
 .comment        0x00000000       0x3c
  .comment       0x00000000       0x3c CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
@@ -5350,24 +4696,6 @@ LOAD linker stubs
                                  0x1f (size before relaxing)
  .comment       0x0000003c        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/BSP/STM32L4xx_Nucleo_32/stm32l4xx_nucleo_32.c.obj
                                  0x1f (size before relaxing)
- .comment       0x0000003c        0x0 bin_dsp/libCMSISDSP.a(arm_cmplx_mag_f32.c.obj)
-                                 0x1f (size before relaxing)
- .comment       0x0000003c        0x0 bin_dsp/libCMSISDSP.a(arm_rfft_fast_f32.c.obj)
-                                 0x1f (size before relaxing)
- .comment       0x0000003c        0x0 bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
-                                 0x1f (size before relaxing)
- .comment       0x0000003c        0x0 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
-                                 0x1f (size before relaxing)
- .comment       0x0000003c        0x0 bin_dsp/libCMSISDSP.a(arm_cfft_f32.c.obj)
-                                 0x1f (size before relaxing)
- .comment       0x0000003c        0x0 bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
-                                 0x1f (size before relaxing)
- .comment       0x0000003c        0x0 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
-                                 0x1f (size before relaxing)
- .comment       0x0000003c        0x0 bin_dsp/libCMSISDSP.a(arm_bitreversal2.c.obj)
-                                 0x1f (size before relaxing)
- .comment       0x0000003c        0x0 bin_dsp/libCMSISDSP.a(arm_cfft_radix8_f32.c.obj)
-                                 0x1f (size before relaxing)
  .comment       0x0000003c        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
                                  0x1f (size before relaxing)
  .comment       0x0000003c        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
@@ -5379,218 +4707,168 @@ LOAD linker stubs
  .comment       0x0000003c        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
                                  0x1f (size before relaxing)
 
-.debug_info     0x00000000    0x13d9e
- .debug_info    0x00000000     0x2083 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
- .debug_info    0x00002083      0x3ae CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/stm32l4xx_it.c.obj
- .debug_info    0x00002431     0x10d1 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/stm32l4xx_hal_msp.c.obj
- .debug_info    0x00003502       0x30 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/startup_stm32l432xx.s.obj
- .debug_info    0x00003532      0x5f0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32l4xx.c.obj
- .debug_info    0x00003b22     0x1d12 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
- .debug_info    0x00005834      0x9e0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
- .debug_info    0x00006214      0xbf4 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
- .debug_info    0x00006e08      0xf2c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj
- .debug_info    0x00007d34      0x79f cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj
- .debug_info    0x000084d3     0x20fc cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.obj
- .debug_info    0x0000a5cf      0x9ab cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c.obj
- .debug_info    0x0000af7a      0x71a cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c.obj
- .debug_info    0x0000b694      0x94c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj
- .debug_info    0x0000bfe0      0xd2f cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
- .debug_info    0x0000cd0f     0x10c3 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/BSP/STM32L4xx_Nucleo_32/stm32l4xx_nucleo_32.c.obj
- .debug_info    0x0000ddd2      0x24d bin_dsp/libCMSISDSP.a(arm_cmplx_mag_f32.c.obj)
- .debug_info    0x0000e01f      0x46d bin_dsp/libCMSISDSP.a(arm_rfft_fast_f32.c.obj)
- .debug_info    0x0000e48c      0x523 bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .debug_info    0x0000e9af      0xf70 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .debug_info    0x0000f91f      0x57b bin_dsp/libCMSISDSP.a(arm_cfft_f32.c.obj)
- .debug_info    0x0000fe9a      0x3c9 bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .debug_info    0x00010263     0x1264 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .debug_info    0x000114c7      0x242 bin_dsp/libCMSISDSP.a(arm_bitreversal2.c.obj)
- .debug_info    0x00011709      0x443 bin_dsp/libCMSISDSP.a(arm_cfft_radix8_f32.c.obj)
- .debug_info    0x00011b4c       0xd3 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_addsubdf3.o)
- .debug_info    0x00011c1f       0x57 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_muldivdf3.o)
- .debug_info    0x00011c76       0xdf /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_cmpdf2.o)
- .debug_info    0x00011d55       0x3c /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_unorddf2.o)
- .debug_info    0x00011d91       0x3f /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_truncdfsf2.o)
- .debug_info    0x00011dd0      0xfbf /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
- .debug_info    0x00012d8f       0xe5 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
- .debug_info    0x00012e74      0x71a /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-impure.o)
- .debug_info    0x0001358e      0x700 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-errno.o)
- .debug_info    0x00013c8e      0x110 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
+.debug_info     0x00000000    0x100b2
+ .debug_info    0x00000000     0x2111 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
+ .debug_info    0x00002111      0x3ae CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/stm32l4xx_it.c.obj
+ .debug_info    0x000024bf     0x10d1 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/stm32l4xx_hal_msp.c.obj
+ .debug_info    0x00003590       0x30 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/startup_stm32l432xx.s.obj
+ .debug_info    0x000035c0      0x5f0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32l4xx.c.obj
+ .debug_info    0x00003bb0     0x1d12 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
+ .debug_info    0x000058c2      0x9e0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
+ .debug_info    0x000062a2      0xbf4 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
+ .debug_info    0x00006e96      0xf2c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj
+ .debug_info    0x00007dc2      0x79f cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj
+ .debug_info    0x00008561     0x20fc cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.obj
+ .debug_info    0x0000a65d      0x9ab cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c.obj
+ .debug_info    0x0000b008      0x71a cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c.obj
+ .debug_info    0x0000b722      0x94c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj
+ .debug_info    0x0000c06e      0xd2f cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
+ .debug_info    0x0000cd9d     0x10c3 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/BSP/STM32L4xx_Nucleo_32/stm32l4xx_nucleo_32.c.obj
+ .debug_info    0x0000de60       0xd3 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_addsubdf3.o)
+ .debug_info    0x0000df33       0x57 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_muldivdf3.o)
+ .debug_info    0x0000df8a       0xdf /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_cmpdf2.o)
+ .debug_info    0x0000e069       0x3c /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_unorddf2.o)
+ .debug_info    0x0000e0a5       0x3f /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_truncdfsf2.o)
+ .debug_info    0x0000e0e4      0xfbf /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
+ .debug_info    0x0000f0a3       0xe5 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
+ .debug_info    0x0000f188      0x71a /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-impure.o)
+ .debug_info    0x0000f8a2      0x700 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-errno.o)
+ .debug_info    0x0000ffa2      0x110 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
 
-.debug_abbrev   0x00000000     0x3514
- .debug_abbrev  0x00000000      0x367 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
- .debug_abbrev  0x00000367      0x198 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/stm32l4xx_it.c.obj
- .debug_abbrev  0x000004ff      0x1ef CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/stm32l4xx_hal_msp.c.obj
- .debug_abbrev  0x000006ee       0x24 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/startup_stm32l432xx.s.obj
- .debug_abbrev  0x00000712      0x117 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32l4xx.c.obj
- .debug_abbrev  0x00000829      0x2ee cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
- .debug_abbrev  0x00000b17      0x226 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
- .debug_abbrev  0x00000d3d      0x2dc cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
- .debug_abbrev  0x00001019      0x2a0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj
- .debug_abbrev  0x000012b9      0x1d1 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj
- .debug_abbrev  0x0000148a      0x285 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.obj
- .debug_abbrev  0x0000170f      0x1cb cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c.obj
- .debug_abbrev  0x000018da      0x1fd cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c.obj
- .debug_abbrev  0x00001ad7      0x1f9 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj
- .debug_abbrev  0x00001cd0      0x31c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
- .debug_abbrev  0x00001fec      0x2b0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/BSP/STM32L4xx_Nucleo_32/stm32l4xx_nucleo_32.c.obj
- .debug_abbrev  0x0000229c      0x120 bin_dsp/libCMSISDSP.a(arm_cmplx_mag_f32.c.obj)
- .debug_abbrev  0x000023bc      0x12c bin_dsp/libCMSISDSP.a(arm_rfft_fast_f32.c.obj)
- .debug_abbrev  0x000024e8      0x1a6 bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .debug_abbrev  0x0000268e       0xb2 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .debug_abbrev  0x00002740      0x140 bin_dsp/libCMSISDSP.a(arm_cfft_f32.c.obj)
- .debug_abbrev  0x00002880      0x185 bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .debug_abbrev  0x00002a05       0xe1 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .debug_abbrev  0x00002ae6       0x8d bin_dsp/libCMSISDSP.a(arm_bitreversal2.c.obj)
- .debug_abbrev  0x00002b73       0x9a bin_dsp/libCMSISDSP.a(arm_cfft_radix8_f32.c.obj)
- .debug_abbrev  0x00002c0d       0x28 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_addsubdf3.o)
- .debug_abbrev  0x00002c35       0x28 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_muldivdf3.o)
- .debug_abbrev  0x00002c5d       0x28 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_cmpdf2.o)
- .debug_abbrev  0x00002c85       0x28 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_unorddf2.o)
- .debug_abbrev  0x00002cad       0x28 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_truncdfsf2.o)
- .debug_abbrev  0x00002cd5      0x419 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
- .debug_abbrev  0x000030ee       0xa4 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
- .debug_abbrev  0x00003192      0x14f /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-impure.o)
- .debug_abbrev  0x000032e1      0x164 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-errno.o)
- .debug_abbrev  0x00003445       0xcf /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
+.debug_abbrev   0x00000000     0x2b90
+ .debug_abbrev  0x00000000      0x354 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
+ .debug_abbrev  0x00000354      0x198 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/stm32l4xx_it.c.obj
+ .debug_abbrev  0x000004ec      0x1ef CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/stm32l4xx_hal_msp.c.obj
+ .debug_abbrev  0x000006db       0x24 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/startup_stm32l432xx.s.obj
+ .debug_abbrev  0x000006ff      0x117 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32l4xx.c.obj
+ .debug_abbrev  0x00000816      0x2ee cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
+ .debug_abbrev  0x00000b04      0x226 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
+ .debug_abbrev  0x00000d2a      0x2dc cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
+ .debug_abbrev  0x00001006      0x2a0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj
+ .debug_abbrev  0x000012a6      0x1d1 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj
+ .debug_abbrev  0x00001477      0x285 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.obj
+ .debug_abbrev  0x000016fc      0x1cb cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c.obj
+ .debug_abbrev  0x000018c7      0x1fd cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c.obj
+ .debug_abbrev  0x00001ac4      0x1f9 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj
+ .debug_abbrev  0x00001cbd      0x31c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
+ .debug_abbrev  0x00001fd9      0x2b0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/BSP/STM32L4xx_Nucleo_32/stm32l4xx_nucleo_32.c.obj
+ .debug_abbrev  0x00002289       0x28 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_addsubdf3.o)
+ .debug_abbrev  0x000022b1       0x28 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_muldivdf3.o)
+ .debug_abbrev  0x000022d9       0x28 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_cmpdf2.o)
+ .debug_abbrev  0x00002301       0x28 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_unorddf2.o)
+ .debug_abbrev  0x00002329       0x28 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_truncdfsf2.o)
+ .debug_abbrev  0x00002351      0x419 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
+ .debug_abbrev  0x0000276a       0xa4 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
+ .debug_abbrev  0x0000280e      0x14f /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-impure.o)
+ .debug_abbrev  0x0000295d      0x164 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-errno.o)
+ .debug_abbrev  0x00002ac1       0xcf /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
 
-.debug_aranges  0x00000000     0x1068
+.debug_aranges  0x00000000      0xea8
  .debug_aranges
-                0x00000000       0xe0 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
+                0x00000000       0xe8 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
  .debug_aranges
-                0x000000e0       0x68 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/stm32l4xx_it.c.obj
+                0x000000e8       0x68 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/stm32l4xx_it.c.obj
  .debug_aranges
-                0x00000148       0x40 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/stm32l4xx_hal_msp.c.obj
+                0x00000150       0x40 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/stm32l4xx_hal_msp.c.obj
  .debug_aranges
-                0x00000188       0x28 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/startup_stm32l432xx.s.obj
+                0x00000190       0x28 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/startup_stm32l432xx.s.obj
  .debug_aranges
-                0x000001b0       0x28 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32l4xx.c.obj
+                0x000001b8       0x28 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32l4xx.c.obj
  .debug_aranges
-                0x000001d8      0x210 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
+                0x000001e0      0x210 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
  .debug_aranges
-                0x000003e8      0x108 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
+                0x000003f0      0x108 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
  .debug_aranges
-                0x000004f0       0x90 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
+                0x000004f8       0x90 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
  .debug_aranges
-                0x00000580       0xf0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj
+                0x00000588       0xf0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj
  .debug_aranges
-                0x00000670       0x58 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj
+                0x00000678       0x58 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj
  .debug_aranges
-                0x000006c8      0x2a0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.obj
+                0x000006d0      0x2a0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.obj
  .debug_aranges
-                0x00000968       0x48 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c.obj
+                0x00000970       0x48 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c.obj
  .debug_aranges
-                0x000009b0       0x80 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c.obj
+                0x000009b8       0x80 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c.obj
  .debug_aranges
-                0x00000a30      0x128 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj
+                0x00000a38      0x128 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj
  .debug_aranges
-                0x00000b58      0x128 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
+                0x00000b60      0x128 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
  .debug_aranges
-                0x00000c80       0x90 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/BSP/STM32L4xx_Nucleo_32/stm32l4xx_nucleo_32.c.obj
+                0x00000c88       0x90 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/BSP/STM32L4xx_Nucleo_32/stm32l4xx_nucleo_32.c.obj
  .debug_aranges
-                0x00000d10       0x20 bin_dsp/libCMSISDSP.a(arm_cmplx_mag_f32.c.obj)
+                0x00000d18       0x20 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_addsubdf3.o)
  .debug_aranges
-                0x00000d30       0x30 bin_dsp/libCMSISDSP.a(arm_rfft_fast_f32.c.obj)
+                0x00000d38       0x20 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_muldivdf3.o)
  .debug_aranges
-                0x00000d60       0x60 bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
+                0x00000d58       0x20 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_cmpdf2.o)
  .debug_aranges
-                0x00000dc0       0x18 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
+                0x00000d78       0x20 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_unorddf2.o)
  .debug_aranges
-                0x00000dd8       0x30 bin_dsp/libCMSISDSP.a(arm_cfft_f32.c.obj)
+                0x00000d98       0x20 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_truncdfsf2.o)
  .debug_aranges
-                0x00000e08       0x68 bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
+                0x00000db8       0x78 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
  .debug_aranges
-                0x00000e70       0x18 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
+                0x00000e30       0x20 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
  .debug_aranges
-                0x00000e88       0x30 bin_dsp/libCMSISDSP.a(arm_bitreversal2.c.obj)
+                0x00000e50       0x18 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-impure.o)
  .debug_aranges
-                0x00000eb8       0x20 bin_dsp/libCMSISDSP.a(arm_cfft_radix8_f32.c.obj)
+                0x00000e68       0x20 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-errno.o)
  .debug_aranges
-                0x00000ed8       0x20 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_addsubdf3.o)
- .debug_aranges
-                0x00000ef8       0x20 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_muldivdf3.o)
- .debug_aranges
-                0x00000f18       0x20 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_cmpdf2.o)
- .debug_aranges
-                0x00000f38       0x20 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_unorddf2.o)
- .debug_aranges
-                0x00000f58       0x20 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_truncdfsf2.o)
- .debug_aranges
-                0x00000f78       0x78 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
- .debug_aranges
-                0x00000ff0       0x20 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
- .debug_aranges
-                0x00001010       0x18 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-impure.o)
- .debug_aranges
-                0x00001028       0x20 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-errno.o)
- .debug_aranges
-                0x00001048       0x20 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
+                0x00000e88       0x20 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
 
 .debug_rnglists
-                0x00000000      0xc36
+                0x00000000      0xb21
  .debug_rnglists
-                0x00000000       0xba CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
+                0x00000000       0xc0 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
  .debug_rnglists
-                0x000000ba       0x49 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/stm32l4xx_it.c.obj
+                0x000000c0       0x49 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/stm32l4xx_it.c.obj
  .debug_rnglists
-                0x00000103       0x2d CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/stm32l4xx_hal_msp.c.obj
+                0x00000109       0x2d CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/stm32l4xx_hal_msp.c.obj
  .debug_rnglists
-                0x00000130       0x19 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/startup_stm32l432xx.s.obj
+                0x00000136       0x19 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/startup_stm32l432xx.s.obj
  .debug_rnglists
-                0x00000149       0x1a cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32l4xx.c.obj
+                0x0000014f       0x1a cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32l4xx.c.obj
  .debug_rnglists
-                0x00000163      0x196 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
+                0x00000169      0x196 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
  .debug_rnglists
-                0x000002f9       0xc1 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
+                0x000002ff       0xc1 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
  .debug_rnglists
-                0x000003ba       0x6d cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
+                0x000003c0       0x6d cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
  .debug_rnglists
-                0x00000427       0xba cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj
+                0x0000042d       0xba cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj
  .debug_rnglists
-                0x000004e1       0x3f cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj
+                0x000004e7       0x3f cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj
  .debug_rnglists
-                0x00000520      0x228 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.obj
+                0x00000526      0x228 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.obj
  .debug_rnglists
-                0x00000748       0x35 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c.obj
+                0x0000074e       0x35 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c.obj
  .debug_rnglists
-                0x0000077d       0x64 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c.obj
+                0x00000783       0x64 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c.obj
  .debug_rnglists
-                0x000007e1       0xdf cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj
+                0x000007e7       0xdf cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj
  .debug_rnglists
-                0x000008c0       0xd9 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
+                0x000008c6       0xd9 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
  .debug_rnglists
-                0x00000999       0x69 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/BSP/STM32L4xx_Nucleo_32/stm32l4xx_nucleo_32.c.obj
+                0x0000099f       0x69 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/BSP/STM32L4xx_Nucleo_32/stm32l4xx_nucleo_32.c.obj
  .debug_rnglists
-                0x00000a02       0x14 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-w_log.o)
+                0x00000a08       0x14 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-w_log.o)
  .debug_rnglists
-                0x00000a16       0x13 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-s_nan.o)
+                0x00000a1c       0x13 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-s_nan.o)
  .debug_rnglists
-                0x00000a29       0x13 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_round.o)
+                0x00000a2f       0x13 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_round.o)
  .debug_rnglists
-                0x00000a3c       0x38 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-e_log.o)
+                0x00000a42       0x38 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-e_log.o)
  .debug_rnglists
-                0x00000a74       0x14 bin_dsp/libCMSISDSP.a(arm_cmplx_mag_f32.c.obj)
+                0x00000a7a       0x6e /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
  .debug_rnglists
-                0x00000a88       0x21 bin_dsp/libCMSISDSP.a(arm_rfft_fast_f32.c.obj)
+                0x00000ae8       0x13 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
  .debug_rnglists
-                0x00000aa9       0x44 bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
+                0x00000afb       0x13 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-errno.o)
  .debug_rnglists
-                0x00000aed       0x22 bin_dsp/libCMSISDSP.a(arm_cfft_f32.c.obj)
- .debug_rnglists
-                0x00000b0f       0x4a bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .debug_rnglists
-                0x00000b59       0x22 bin_dsp/libCMSISDSP.a(arm_bitreversal2.c.obj)
- .debug_rnglists
-                0x00000b7b       0x14 bin_dsp/libCMSISDSP.a(arm_cfft_radix8_f32.c.obj)
- .debug_rnglists
-                0x00000b8f       0x6e /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
- .debug_rnglists
-                0x00000bfd       0x13 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
- .debug_rnglists
-                0x00000c10       0x13 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-errno.o)
- .debug_rnglists
-                0x00000c23       0x13 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
+                0x00000b0e       0x13 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
 
-.debug_macro    0x00000000    0x24059
+.debug_macro    0x00000000    0x22155
  .debug_macro   0x00000000      0x474 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
  .debug_macro   0x00000474      0xaf6 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
  .debug_macro   0x00000f6a      0x1a7 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
@@ -5681,167 +4959,118 @@ LOAD linker stubs
  .debug_macro   0x00021cd9      0x1e3 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
  .debug_macro   0x00021ebc      0x210 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/BSP/STM32L4xx_Nucleo_32/stm32l4xx_nucleo_32.c.obj
  .debug_macro   0x000220cc       0x89 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/BSP/STM32L4xx_Nucleo_32/stm32l4xx_nucleo_32.c.obj
- .debug_macro   0x00022155      0x1fc bin_dsp/libCMSISDSP.a(arm_cmplx_mag_f32.c.obj)
- .debug_macro   0x00022351      0xae4 bin_dsp/libCMSISDSP.a(arm_cmplx_mag_f32.c.obj)
- .debug_macro   0x00022e35       0x10 bin_dsp/libCMSISDSP.a(arm_cmplx_mag_f32.c.obj)
- .debug_macro   0x00022e45       0x4e bin_dsp/libCMSISDSP.a(arm_cmplx_mag_f32.c.obj)
- .debug_macro   0x00022e93       0x3b bin_dsp/libCMSISDSP.a(arm_cmplx_mag_f32.c.obj)
- .debug_macro   0x00022ece       0x22 bin_dsp/libCMSISDSP.a(arm_cmplx_mag_f32.c.obj)
- .debug_macro   0x00022ef0      0x206 bin_dsp/libCMSISDSP.a(arm_rfft_fast_f32.c.obj)
- .debug_macro   0x000230f6      0x219 bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .debug_macro   0x0002330f       0xc7 bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .debug_macro   0x000233d6      0x1fb bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .debug_macro   0x000235d1      0x219 bin_dsp/libCMSISDSP.a(arm_cfft_f32.c.obj)
- .debug_macro   0x000237ea      0x237 bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .debug_macro   0x00023a21      0x223 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .debug_macro   0x00023c44      0x20f bin_dsp/libCMSISDSP.a(arm_bitreversal2.c.obj)
- .debug_macro   0x00023e53      0x206 bin_dsp/libCMSISDSP.a(arm_cfft_radix8_f32.c.obj)
 
-.debug_line     0x00000000    0x12c81
- .debug_line    0x00000000     0x10e0 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
- .debug_line    0x000010e0      0x74d CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/stm32l4xx_it.c.obj
- .debug_line    0x0000182d      0x782 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/stm32l4xx_hal_msp.c.obj
- .debug_line    0x00001faf       0x7a CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/startup_stm32l432xx.s.obj
- .debug_line    0x00002029      0x6a6 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32l4xx.c.obj
- .debug_line    0x000026cf     0x1c86 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
- .debug_line    0x00004355      0x978 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
- .debug_line    0x00004ccd     0x1083 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
- .debug_line    0x00005d50     0x1291 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj
- .debug_line    0x00006fe1      0x9fb cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj
- .debug_line    0x000079dc     0x3789 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.obj
- .debug_line    0x0000b165      0x76c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c.obj
- .debug_line    0x0000b8d1      0xbe0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c.obj
- .debug_line    0x0000c4b1      0xb09 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj
- .debug_line    0x0000cfba      0xbb9 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
- .debug_line    0x0000db73      0x85d cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/BSP/STM32L4xx_Nucleo_32/stm32l4xx_nucleo_32.c.obj
- .debug_line    0x0000e3d0      0x583 bin_dsp/libCMSISDSP.a(arm_cmplx_mag_f32.c.obj)
- .debug_line    0x0000e953      0x5e7 bin_dsp/libCMSISDSP.a(arm_rfft_fast_f32.c.obj)
- .debug_line    0x0000ef3a      0x65c bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .debug_line    0x0000f596      0x444 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
- .debug_line    0x0000f9da      0xc06 bin_dsp/libCMSISDSP.a(arm_cfft_f32.c.obj)
- .debug_line    0x000105e0      0x59d bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .debug_line    0x00010b7d      0x490 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
- .debug_line    0x0001100d      0x57c bin_dsp/libCMSISDSP.a(arm_bitreversal2.c.obj)
- .debug_line    0x00011589      0x89b bin_dsp/libCMSISDSP.a(arm_cfft_radix8_f32.c.obj)
- .debug_line    0x00011e24      0x16f /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_addsubdf3.o)
- .debug_line    0x00011f93      0x184 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_muldivdf3.o)
- .debug_line    0x00012117       0xa6 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_cmpdf2.o)
- .debug_line    0x000121bd       0x57 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_unorddf2.o)
- .debug_line    0x00012214       0x76 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_truncdfsf2.o)
- .debug_line    0x0001228a      0x580 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
- .debug_line    0x0001280a      0x12e /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
- .debug_line    0x00012938      0x108 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-impure.o)
- .debug_line    0x00012a40      0x12a /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-errno.o)
- .debug_line    0x00012b6a      0x117 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
+.debug_line     0x00000000     0xf27a
+ .debug_line    0x00000000     0x112d CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
+ .debug_line    0x0000112d      0x74d CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/stm32l4xx_it.c.obj
+ .debug_line    0x0000187a      0x782 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/stm32l4xx_hal_msp.c.obj
+ .debug_line    0x00001ffc       0x7a CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/startup_stm32l432xx.s.obj
+ .debug_line    0x00002076      0x6a6 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32l4xx.c.obj
+ .debug_line    0x0000271c     0x1c86 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
+ .debug_line    0x000043a2      0x978 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
+ .debug_line    0x00004d1a     0x1083 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
+ .debug_line    0x00005d9d     0x1291 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj
+ .debug_line    0x0000702e      0x9fb cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj
+ .debug_line    0x00007a29     0x3789 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.obj
+ .debug_line    0x0000b1b2      0x76c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c.obj
+ .debug_line    0x0000b91e      0xbe0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c.obj
+ .debug_line    0x0000c4fe      0xb09 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj
+ .debug_line    0x0000d007      0xbb9 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
+ .debug_line    0x0000dbc0      0x85d cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/BSP/STM32L4xx_Nucleo_32/stm32l4xx_nucleo_32.c.obj
+ .debug_line    0x0000e41d      0x16f /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_addsubdf3.o)
+ .debug_line    0x0000e58c      0x184 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_muldivdf3.o)
+ .debug_line    0x0000e710       0xa6 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_cmpdf2.o)
+ .debug_line    0x0000e7b6       0x57 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_unorddf2.o)
+ .debug_line    0x0000e80d       0x76 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_truncdfsf2.o)
+ .debug_line    0x0000e883      0x580 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
+ .debug_line    0x0000ee03      0x12e /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
+ .debug_line    0x0000ef31      0x108 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-impure.o)
+ .debug_line    0x0000f039      0x12a /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-errno.o)
+ .debug_line    0x0000f163      0x117 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
 
-.debug_str      0x00000000    0xd3d63
- .debug_str     0x00000000    0xd3d63 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
-                              0xce0ff (size before relaxing)
- .debug_str     0x000d3d63        0x0 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/stm32l4xx_it.c.obj
+.debug_str      0x00000000    0xd1e7f
+ .debug_str     0x00000000    0xd1e7f CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
+                              0xce05b (size before relaxing)
+ .debug_str     0x000d1e7f        0x0 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/stm32l4xx_it.c.obj
                               0xc7f6f (size before relaxing)
- .debug_str     0x000d3d63        0x0 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/stm32l4xx_hal_msp.c.obj
+ .debug_str     0x000d1e7f        0x0 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/stm32l4xx_hal_msp.c.obj
                               0xc87f9 (size before relaxing)
- .debug_str     0x000d3d63        0x0 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/startup_stm32l432xx.s.obj
+ .debug_str     0x000d1e7f        0x0 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/startup_stm32l432xx.s.obj
                                  0x8c (size before relaxing)
- .debug_str     0x000d3d63        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32l4xx.c.obj
+ .debug_str     0x000d1e7f        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32l4xx.c.obj
                               0xc7aa2 (size before relaxing)
- .debug_str     0x000d3d63        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
+ .debug_str     0x000d1e7f        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
                               0xc8885 (size before relaxing)
- .debug_str     0x000d3d63        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
+ .debug_str     0x000d1e7f        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
                               0xc8444 (size before relaxing)
- .debug_str     0x000d3d63        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
+ .debug_str     0x000d1e7f        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
                               0xc80a2 (size before relaxing)
- .debug_str     0x000d3d63        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj
+ .debug_str     0x000d1e7f        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj
                               0xc8314 (size before relaxing)
- .debug_str     0x000d3d63        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj
+ .debug_str     0x000d1e7f        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj
                               0xc7c28 (size before relaxing)
- .debug_str     0x000d3d63        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.obj
+ .debug_str     0x000d1e7f        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.obj
                               0xc8ca0 (size before relaxing)
- .debug_str     0x000d3d63        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c.obj
+ .debug_str     0x000d1e7f        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c.obj
                               0xc7faf (size before relaxing)
- .debug_str     0x000d3d63        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c.obj
+ .debug_str     0x000d1e7f        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c.obj
                               0xc7d1b (size before relaxing)
- .debug_str     0x000d3d63        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj
+ .debug_str     0x000d1e7f        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj
                               0xc7f4a (size before relaxing)
- .debug_str     0x000d3d63        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
+ .debug_str     0x000d1e7f        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
                               0xc8202 (size before relaxing)
- .debug_str     0x000d3d63        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/BSP/STM32L4xx_Nucleo_32/stm32l4xx_nucleo_32.c.obj
+ .debug_str     0x000d1e7f        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/BSP/STM32L4xx_Nucleo_32/stm32l4xx_nucleo_32.c.obj
                               0xc8818 (size before relaxing)
- .debug_str     0x000d3d63        0x0 bin_dsp/libCMSISDSP.a(arm_cmplx_mag_f32.c.obj)
-                               0x9377 (size before relaxing)
- .debug_str     0x000d3d63        0x0 bin_dsp/libCMSISDSP.a(arm_rfft_fast_f32.c.obj)
-                               0x938f (size before relaxing)
- .debug_str     0x000d3d63        0x0 bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
-                               0x9c3d (size before relaxing)
- .debug_str     0x000d3d63        0x0 bin_dsp/libCMSISDSP.a(arm_common_tables.c.obj)
-                               0xa055 (size before relaxing)
- .debug_str     0x000d3d63        0x0 bin_dsp/libCMSISDSP.a(arm_cfft_f32.c.obj)
-                               0x9a14 (size before relaxing)
- .debug_str     0x000d3d63        0x0 bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
-                               0x9d23 (size before relaxing)
- .debug_str     0x000d3d63        0x0 bin_dsp/libCMSISDSP.a(arm_const_structs.c.obj)
-                               0xa847 (size before relaxing)
- .debug_str     0x000d3d63        0x0 bin_dsp/libCMSISDSP.a(arm_bitreversal2.c.obj)
-                               0x990f (size before relaxing)
- .debug_str     0x000d3d63        0x0 bin_dsp/libCMSISDSP.a(arm_cfft_radix8_f32.c.obj)
-                               0x92f3 (size before relaxing)
- .debug_str     0x000d3d63        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_addsubdf3.o)
+ .debug_str     0x000d1e7f        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_addsubdf3.o)
                                 0x14f (size before relaxing)
- .debug_str     0x000d3d63        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_muldivdf3.o)
+ .debug_str     0x000d1e7f        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_muldivdf3.o)
                                  0xcf (size before relaxing)
- .debug_str     0x000d3d63        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_cmpdf2.o)
+ .debug_str     0x000d1e7f        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_cmpdf2.o)
                                 0x158 (size before relaxing)
- .debug_str     0x000d3d63        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_unorddf2.o)
+ .debug_str     0x000d1e7f        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_unorddf2.o)
                                  0xbd (size before relaxing)
- .debug_str     0x000d3d63        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_truncdfsf2.o)
+ .debug_str     0x000d1e7f        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_truncdfsf2.o)
                                  0xbc (size before relaxing)
- .debug_str     0x000d3d63        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
+ .debug_str     0x000d1e7f        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
                                 0x762 (size before relaxing)
- .debug_str     0x000d3d63        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
+ .debug_str     0x000d1e7f        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
                                 0x1bf (size before relaxing)
- .debug_str     0x000d3d63        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-impure.o)
+ .debug_str     0x000d1e7f        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-impure.o)
                                 0x4df (size before relaxing)
- .debug_str     0x000d3d63        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-errno.o)
+ .debug_str     0x000d1e7f        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-errno.o)
                                 0x4d9 (size before relaxing)
- .debug_str     0x000d3d63        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
+ .debug_str     0x000d1e7f        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
                                 0x220 (size before relaxing)
 
-.debug_frame    0x00000000     0x3f28
- .debug_frame   0x00000000      0x3a4 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
- .debug_frame   0x000003a4      0x120 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/stm32l4xx_it.c.obj
- .debug_frame   0x000004c4       0xd0 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/stm32l4xx_hal_msp.c.obj
- .debug_frame   0x00000594       0x58 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32l4xx.c.obj
- .debug_frame   0x000005ec      0x9b0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
- .debug_frame   0x00000f9c      0x3dc cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
- .debug_frame   0x00001378      0x21c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
- .debug_frame   0x00001594      0x3d0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj
- .debug_frame   0x00001964      0x14c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj
- .debug_frame   0x00001ab0      0xc38 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.obj
- .debug_frame   0x000026e8      0x100 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c.obj
- .debug_frame   0x000027e8      0x204 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c.obj
- .debug_frame   0x000029ec      0x4a4 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj
- .debug_frame   0x00002e90      0x4e8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
- .debug_frame   0x00003378      0x220 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/BSP/STM32L4xx_Nucleo_32/stm32l4xx_nucleo_32.c.obj
- .debug_frame   0x00003598       0x4c /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-w_log.o)
- .debug_frame   0x000035e4       0x20 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-s_nan.o)
- .debug_frame   0x00003604       0x20 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_round.o)
- .debug_frame   0x00003624       0x54 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-e_log.o)
- .debug_frame   0x00003678       0x38 bin_dsp/libCMSISDSP.a(arm_cmplx_mag_f32.c.obj)
- .debug_frame   0x000036b0       0x84 bin_dsp/libCMSISDSP.a(arm_rfft_fast_f32.c.obj)
- .debug_frame   0x00003734      0x154 bin_dsp/libCMSISDSP.a(arm_rfft_fast_init_f32.c.obj)
- .debug_frame   0x00003888       0x84 bin_dsp/libCMSISDSP.a(arm_cfft_f32.c.obj)
- .debug_frame   0x0000390c      0x19c bin_dsp/libCMSISDSP.a(arm_cfft_init_f32.c.obj)
- .debug_frame   0x00003aa8       0x94 bin_dsp/libCMSISDSP.a(arm_bitreversal2.c.obj)
- .debug_frame   0x00003b3c       0x38 bin_dsp/libCMSISDSP.a(arm_cfft_radix8_f32.c.obj)
- .debug_frame   0x00003b74       0xac /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_addsubdf3.o)
- .debug_frame   0x00003c20       0x50 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_muldivdf3.o)
- .debug_frame   0x00003c70       0xc4 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_cmpdf2.o)
- .debug_frame   0x00003d34       0x20 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_unorddf2.o)
- .debug_frame   0x00003d54       0x24 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_truncdfsf2.o)
- .debug_frame   0x00003d78      0x144 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
- .debug_frame   0x00003ebc       0x20 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
- .debug_frame   0x00003edc       0x20 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-errno.o)
- .debug_frame   0x00003efc       0x2c /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
+.debug_frame    0x00000000     0x3a50
+ .debug_frame   0x00000000      0x3c8 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
+ .debug_frame   0x000003c8      0x120 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/stm32l4xx_it.c.obj
+ .debug_frame   0x000004e8       0xd0 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/stm32l4xx_hal_msp.c.obj
+ .debug_frame   0x000005b8       0x58 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32l4xx.c.obj
+ .debug_frame   0x00000610      0x9b0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
+ .debug_frame   0x00000fc0      0x3dc cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
+ .debug_frame   0x0000139c      0x21c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
+ .debug_frame   0x000015b8      0x3d0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj
+ .debug_frame   0x00001988      0x14c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj
+ .debug_frame   0x00001ad4      0xc38 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.obj
+ .debug_frame   0x0000270c      0x100 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c.obj
+ .debug_frame   0x0000280c      0x204 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c.obj
+ .debug_frame   0x00002a10      0x4a4 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj
+ .debug_frame   0x00002eb4      0x4e8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
+ .debug_frame   0x0000339c      0x220 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/BSP/STM32L4xx_Nucleo_32/stm32l4xx_nucleo_32.c.obj
+ .debug_frame   0x000035bc       0x4c /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-w_log.o)
+ .debug_frame   0x00003608       0x20 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-s_nan.o)
+ .debug_frame   0x00003628       0x20 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_round.o)
+ .debug_frame   0x00003648       0x54 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-e_log.o)
+ .debug_frame   0x0000369c       0xac /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_addsubdf3.o)
+ .debug_frame   0x00003748       0x50 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_muldivdf3.o)
+ .debug_frame   0x00003798       0xc4 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_cmpdf2.o)
+ .debug_frame   0x0000385c       0x20 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_unorddf2.o)
+ .debug_frame   0x0000387c       0x24 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_truncdfsf2.o)
+ .debug_frame   0x000038a0      0x144 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
+ .debug_frame   0x000039e4       0x20 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
+ .debug_frame   0x00003a04       0x20 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-errno.o)
+ .debug_frame   0x00003a24       0x2c /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
 
 .debug_line_str
                 0x00000000      0x109
