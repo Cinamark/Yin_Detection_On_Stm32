@@ -1,6 +1,9 @@
 /home/Mark/Projects/Yin_Detection_On_Stm32/build/CMakeFiles/Yin_Pitch_Detection_on_STM32.dir
 /home/Mark/Projects/Yin_Detection_On_Stm32/build/CMakeFiles/edit_cache.dir
 /home/Mark/Projects/Yin_Detection_On_Stm32/build/CMakeFiles/rebuild_cache.dir
+/home/Mark/Projects/Yin_Detection_On_Stm32/build/bin_dsp/CMakeFiles/CMSISDSP.dir
+/home/Mark/Projects/Yin_Detection_On_Stm32/build/bin_dsp/CMakeFiles/edit_cache.dir
+/home/Mark/Projects/Yin_Detection_On_Stm32/build/bin_dsp/CMakeFiles/rebuild_cache.dir
 /home/Mark/Projects/Yin_Detection_On_Stm32/build/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
 /home/Mark/Projects/Yin_Detection_On_Stm32/build/cmake/stm32cubemx/CMakeFiles/edit_cache.dir
 /home/Mark/Projects/Yin_Detection_On_Stm32/build/cmake/stm32cubemx/CMakeFiles/rebuild_cache.dir

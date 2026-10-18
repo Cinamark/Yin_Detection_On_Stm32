@@ -59,8 +59,8 @@
 
 
 
-#define NUM_SAMPLES                 1024
-#define W_SIZE			    512
+#define BUFFER_SIZE                 2048
+#define W_SIZE			    1024
 
 
 

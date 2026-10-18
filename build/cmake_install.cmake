@@ -39,6 +39,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("/home/Mark/Projects/Yin_Detection_On_Stm32/build/bin_dsp/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("/home/Mark/Projects/Yin_Detection_On_Stm32/build/cmake/stm32cubemx/cmake_install.cmake")
 endif()
 

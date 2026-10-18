@@ -212,6 +212,7 @@ Yin_Pitch_Detection_on_STM32.elf: cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
 Yin_Pitch_Detection_on_STM32.elf: cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c.obj
 Yin_Pitch_Detection_on_STM32.elf: cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/BSP/STM32L4xx_Nucleo_32/stm32l4xx_nucleo_32.c.obj
 Yin_Pitch_Detection_on_STM32.elf: CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/build.make
+Yin_Pitch_Detection_on_STM32.elf: bin_dsp/libCMSISDSP.a
 Yin_Pitch_Detection_on_STM32.elf: CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/Mark/Projects/Yin_Detection_On_Stm32/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable Yin_Pitch_Detection_on_STM32.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/link.txt --verbose=$(VERBOSE)

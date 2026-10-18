@@ -7,6 +7,25 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
+  "/home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Source/BasicMathFunctions/Config.cmake"
+  "/home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Source/BayesFunctions/Config.cmake"
+  "/home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Source/CMakeLists.txt"
+  "/home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Source/CommonTables/Config.cmake"
+  "/home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Source/ComplexMathFunctions/Config.cmake"
+  "/home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Source/ControllerFunctions/Config.cmake"
+  "/home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Source/DistanceFunctions/Config.cmake"
+  "/home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Source/FastMathFunctions/Config.cmake"
+  "/home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Source/FilteringFunctions/Config.cmake"
+  "/home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Source/InterpolationFunctions/Config.cmake"
+  "/home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Source/MatrixFunctions/Config.cmake"
+  "/home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Source/QuaternionMathFunctions/Config.cmake"
+  "/home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Source/SVMFunctions/Config.cmake"
+  "/home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Source/StatisticsFunctions/Config.cmake"
+  "/home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Source/SupportFunctions/Config.cmake"
+  "/home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Source/TransformFunctions/Config.cmake"
+  "/home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Source/WindowFunctions/Config.cmake"
+  "/home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Source/configDsp.cmake"
+  "/home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/cmake/CMSISDSPVersion.cmake"
   "/home/Mark/Projects/Yin_Detection_On_Stm32/CMakeLists.txt"
   "CMakeFiles/4.4.4/CMakeASMCompiler.cmake"
   "CMakeFiles/4.4.4/CMakeCCompiler.cmake"
@@ -21,6 +40,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake/Modules/CMakeGenericSystem.cmake"
   "/usr/share/cmake/Modules/CMakeInitializeConfigs.cmake"
   "/usr/share/cmake/Modules/CMakeLanguageInformation.cmake"
+  "/usr/share/cmake/Modules/CMakePackageConfigHelpers.cmake"
   "/usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake"
   "/usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake"
   "/usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
@@ -28,11 +48,16 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake/Modules/Compiler/GNU-C.cmake"
   "/usr/share/cmake/Modules/Compiler/GNU-CXX.cmake"
   "/usr/share/cmake/Modules/Compiler/GNU.cmake"
+  "/usr/share/cmake/Modules/FindGit.cmake"
+  "/usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake"
+  "/usr/share/cmake/Modules/FindPackageMessage.cmake"
+  "/usr/share/cmake/Modules/GNUInstallDirs.cmake"
   "/usr/share/cmake/Modules/Internal/CMakeASMLinkerInformation.cmake"
   "/usr/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake"
   "/usr/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake"
   "/usr/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake"
   "/usr/share/cmake/Modules/Platform/Generic.cmake"
+  "/usr/share/cmake/Modules/WriteBasicConfigVersionFile.cmake"
   )
 
 # The corresponding makefile is:
@@ -44,11 +69,13 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "bin_dsp/CMakeFiles/CMakeDirectoryInformation.cmake"
   "cmake/stm32cubemx/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/DependInfo.cmake"
+  "bin_dsp/CMakeFiles/CMSISDSP.dir/DependInfo.cmake"
   "cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/DependInfo.cmake"
   )

@@ -3,8 +3,31 @@
 
 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
  /home/Mark/Projects/Yin_Detection_On_Stm32/Core/Src/main.c
+ /home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Include/arm_math.h
+ /home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Include/arm_math_memory.h
+ /home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Include/arm_math_types.h
+ /home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Include/dsp/basic_math_functions.h
+ /home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Include/dsp/bayes_functions.h
+ /home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Include/dsp/complex_math_functions.h
+ /home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Include/dsp/controller_functions.h
+ /home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Include/dsp/distance_functions.h
+ /home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Include/dsp/fast_math_functions.h
+ /home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Include/dsp/filtering_functions.h
+ /home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Include/dsp/interpolation_functions.h
+ /home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Include/dsp/matrix_functions.h
+ /home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Include/dsp/none.h
+ /home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Include/dsp/quaternion_math_functions.h
+ /home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Include/dsp/statistics_functions.h
+ /home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Include/dsp/support_functions.h
+ /home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Include/dsp/svm_defines.h
+ /home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Include/dsp/svm_functions.h
+ /home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Include/dsp/transform_functions.h
+ /home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Include/dsp/utils.h
+ /home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Include/dsp/window_functions.h
  /home/Mark/Projects/Yin_Detection_On_Stm32/Core/Inc/OLED_driver.h
  /home/Mark/Projects/Yin_Detection_On_Stm32/Core/Inc/TORIEL.h
+ /home/Mark/Projects/Yin_Detection_On_Stm32/Core/Inc/Yinstm.h
+ /home/Mark/Projects/Yin_Detection_On_Stm32/Core/Inc/adc_test_signals.h
  /home/Mark/Projects/Yin_Detection_On_Stm32/Core/Inc/ctrldFM.h
  /home/Mark/Projects/Yin_Detection_On_Stm32/Core/Inc/definitions.h
  /home/Mark/Projects/Yin_Detection_On_Stm32/Core/Inc/main.h
@@ -39,15 +62,34 @@ CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj
  /home/Mark/Projects/Yin_Detection_On_Stm32/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc_ex.h
  /home/Mark/Projects/Yin_Detection_On_Stm32/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_adc.h
  /home/Mark/Projects/Yin_Detection_On_Stm32/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_dma.h
+ /usr/arm-none-eabi/include/_ansi.h
  /usr/arm-none-eabi/include/_newlib_version.h
+ /usr/arm-none-eabi/include/limits.h
  /usr/arm-none-eabi/include/machine/_default_types.h
+ /usr/arm-none-eabi/include/machine/_types.h
+ /usr/arm-none-eabi/include/machine/ieeefp.h
+ /usr/arm-none-eabi/include/math.h
+ /usr/arm-none-eabi/include/newlib.h
  /usr/arm-none-eabi/include/stdint.h
+ /usr/arm-none-eabi/include/string.h
+ /usr/arm-none-eabi/include/strings.h
  /usr/arm-none-eabi/include/sys/_intsup.h
+ /usr/arm-none-eabi/include/sys/_locale.h
  /usr/arm-none-eabi/include/sys/_stdint.h
+ /usr/arm-none-eabi/include/sys/_types.h
+ /usr/arm-none-eabi/include/sys/cdefs.h
+ /usr/arm-none-eabi/include/sys/config.h
  /usr/arm-none-eabi/include/sys/features.h
+ /usr/arm-none-eabi/include/sys/lock.h
+ /usr/arm-none-eabi/include/sys/reent.h
+ /usr/arm-none-eabi/include/sys/string.h
+ /usr/arm-none-eabi/include/sys/syslimits.h
+ /usr/lib/gcc/arm-none-eabi/16.2.0/include/float.h
+ /usr/lib/gcc/arm-none-eabi/16.2.0/include/limits.h
  /usr/lib/gcc/arm-none-eabi/16.2.0/include/stdbool.h
  /usr/lib/gcc/arm-none-eabi/16.2.0/include/stddef.h
  /usr/lib/gcc/arm-none-eabi/16.2.0/include/stdint.h
+ /usr/lib/gcc/arm-none-eabi/16.2.0/include/syslimits.h
 
 CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/stm32l4xx_hal_msp.c.obj
  /home/Mark/Projects/Yin_Detection_On_Stm32/Core/Src/stm32l4xx_hal_msp.c

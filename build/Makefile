@@ -130,6 +130,19 @@ Yin_Pitch_Detection_on_STM32/fast:
 .PHONY : Yin_Pitch_Detection_on_STM32/fast
 
 #=============================================================================
+# Target rules for targets named CMSISDSP
+
+# Build rule for target.
+CMSISDSP: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMSISDSP
+.PHONY : CMSISDSP
+
+# fast build rule for target.
+CMSISDSP/fast:
+	$(MAKE) $(MAKESILENT) -f bin_dsp/CMakeFiles/CMSISDSP.dir/build.make bin_dsp/CMakeFiles/CMSISDSP.dir/build
+.PHONY : CMSISDSP/fast
+
+#=============================================================================
 # Target rules for targets named STM32_Drivers
 
 # Build rule for target.
@@ -278,6 +291,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... CMSISDSP"
 	@echo "... STM32_Drivers"
 	@echo "... Yin_Pitch_Detection_on_STM32"
 	@echo "... Core/Src/main.obj"

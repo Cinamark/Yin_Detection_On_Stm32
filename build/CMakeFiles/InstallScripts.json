@@ -2,6 +2,7 @@
 	"InstallScripts" : 
 	[
 		"/home/Mark/Projects/Yin_Detection_On_Stm32/build/cmake_install.cmake",
+		"/home/Mark/Projects/Yin_Detection_On_Stm32/build/bin_dsp/cmake_install.cmake",
 		"/home/Mark/Projects/Yin_Detection_On_Stm32/build/cmake/stm32cubemx/cmake_install.cmake"
 	],
 	"Parallel" : false

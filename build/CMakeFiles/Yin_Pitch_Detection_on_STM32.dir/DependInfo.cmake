@@ -28,6 +28,9 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "/home/Mark/Projects/Yin_Detection_On_Stm32/cmake/stm32cubemx/../../Drivers/BSP/STM32L4xx_Nucleo_32"
   "/home/Mark/Projects/Yin_Detection_On_Stm32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32L4xx/Include"
   "/home/Mark/Projects/Yin_Detection_On_Stm32/cmake/stm32cubemx/../../Drivers/CMSIS/Include"
+  "/home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Source/../Include"
+  "/home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Source/../dsppp/Include"
+  "/home/Mark/Projects/Yin_Detection_On_Stm32/Drivers/CMSIS/Include"
   )
 
 # The set of dependency files which are needed:

@@ -1,4 +1,4 @@
-/* USER CODE BEGIN Header */
+///* USER CODE BEGIN Header */
 /**
   ******************************************************************************
   * @file           : main.c
@@ -21,13 +21,14 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "definitions.h"
-#include "OLED_driver.h"
-#include "ctrldFM.h"
+//#include "OLED_driver.h"
+//#include "ctrldFM.h"
 #include "TORIEL.h"
-
-
+#include "Yinstm.h" 
+#include "arm_math.h"
+#include "adc_test_signals.h"
 //CHECKLIST 
-// Wednesday - Make sure I'm able to print out all the letters and the pitch conversion works
+// Wednesday - Make sure I'm able to print out all the letters and the pitch conversion works DONE
 // Thursday - Get the YIN stuff working, get a case from Claude or something
 // Friday - Get the fucking ADC working (Somehow find the time), THE MORNING!
 //
@@ -57,6 +58,10 @@ I2C_HandleTypeDef hi2c1;
 /* USER CODE BEGIN PV */
 
 uint8_t framebuffer[SSD1306_BUF_LEN];
+arm_rfft_fast_instance_f32 fft;
+float   inputF[BUFFER_SIZE/2];
+float   powerBuff[BUFFER_SIZE/2];
+float   destBuff[BUFFER_SIZE/2];
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -113,11 +118,14 @@ int main(void)
   }
 
   clearScreen(&hi2c1);
+
+  arm_rfft_fast_init_f32 (&fft, 1024);
+    
+
   //set_pixel(64, 32, true, framebuffer);
   
 //    printBitmap((64 - 22), (32 - 25), TORIEL_WIDTH, TORIEL_HEIGHT, TORIEL_SIZE, TORIEL_MAP,framebuffer);
-//    printText(0, 20, 16, "ABCDEFG#12345", FONT, framebuffer);
-  printPitch(framebuffer, sizeof(framebuffer), 440);
+//  printText(0, 20, 16, "ABCDEFG#12345", FONT, framebuffer);
   /* USER CODE END 2 */
 
   /* Initialize leds */
@@ -127,9 +135,24 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-
+    adcToFloat(adc_sine_440hz,inputF, W_SIZE);
+    Yin_FFT(inputF, powerBuff, destBuff, W_SIZE, &fft);
+  HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_3);
+  printPitch(framebuffer, sizeof(framebuffer), 220);
     update(framebuffer, sizeof(framebuffer), &hi2c1);
     HAL_Delay(1000);
+    printPitch(framebuffer, sizeof(framebuffer), 440);
+    update(framebuffer, sizeof(framebuffer), &hi2c1);
+    HAL_Delay(1000);
+    printPitch(framebuffer, sizeof(framebuffer), 52);
+    update(framebuffer, sizeof(framebuffer), &hi2c1);
+    HAL_Delay(1000);
+    printPitch(framebuffer, sizeof(framebuffer), 55);
+    update(framebuffer, sizeof(framebuffer), &hi2c1);
+    HAL_Delay(1000);
+    
+
+
     /* USER CODE END WHILE */
        /* USER CODE BEGIN 3 */
   }

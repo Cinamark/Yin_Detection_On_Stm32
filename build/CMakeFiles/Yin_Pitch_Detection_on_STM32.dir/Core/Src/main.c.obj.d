@@ -41,9 +41,60 @@ CMakeFiles/Yin_Pitch_Detection_on_STM32.dir/Core/Src/main.c.obj: \
  /home/Mark/Projects/Yin_Detection_On_Stm32/cmake/stm32cubemx/../../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h \
  /home/Mark/Projects/Yin_Detection_On_Stm32/cmake/stm32cubemx/../../Drivers/BSP/STM32L4xx_Nucleo_32/stm32l4xx_nucleo_32.h \
  /home/Mark/Projects/Yin_Detection_On_Stm32/cmake/stm32cubemx/../../Core/Inc/definitions.h \
- /home/Mark/Projects/Yin_Detection_On_Stm32/cmake/stm32cubemx/../../Core/Inc/OLED_driver.h \
+ /home/Mark/Projects/Yin_Detection_On_Stm32/cmake/stm32cubemx/../../Core/Inc/TORIEL.h \
+ /home/Mark/Projects/Yin_Detection_On_Stm32/cmake/stm32cubemx/../../Core/Inc/Yinstm.h \
  /home/Mark/Projects/Yin_Detection_On_Stm32/cmake/stm32cubemx/../../Core/Inc/main.h \
  /home/Mark/Projects/Yin_Detection_On_Stm32/cmake/stm32cubemx/../../Core/Inc/definitions.h \
+ /usr/arm-none-eabi/include/math.h /usr/arm-none-eabi/include/sys/reent.h \
+ /usr/arm-none-eabi/include/_ansi.h /usr/arm-none-eabi/include/newlib.h \
+ /usr/arm-none-eabi/include/sys/config.h \
+ /usr/arm-none-eabi/include/machine/ieeefp.h \
+ /usr/arm-none-eabi/include/sys/cdefs.h \
+ /usr/arm-none-eabi/include/sys/_types.h \
+ /usr/arm-none-eabi/include/machine/_types.h \
+ /usr/arm-none-eabi/include/sys/lock.h /usr/arm-none-eabi/include/_ansi.h \
+ /home/Mark/Projects/Yin_Detection_On_Stm32/cmake/stm32cubemx/../../Core/Inc/OLED_driver.h \
  /usr/lib/gcc/arm-none-eabi/16.2.0/include/stdbool.h \
  /home/Mark/Projects/Yin_Detection_On_Stm32/cmake/stm32cubemx/../../Core/Inc/ctrldFM.h \
- /home/Mark/Projects/Yin_Detection_On_Stm32/cmake/stm32cubemx/../../Core/Inc/TORIEL.h
+ /home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Source/../Include/arm_math.h \
+ /home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Source/../Include/arm_math_types.h \
+ /usr/arm-none-eabi/include/string.h \
+ /usr/arm-none-eabi/include/sys/_locale.h \
+ /usr/arm-none-eabi/include/strings.h \
+ /usr/arm-none-eabi/include/sys/string.h \
+ /usr/lib/gcc/arm-none-eabi/16.2.0/include/float.h \
+ /usr/lib/gcc/arm-none-eabi/16.2.0/include/limits.h \
+ /usr/lib/gcc/arm-none-eabi/16.2.0/include/syslimits.h \
+ /usr/arm-none-eabi/include/limits.h \
+ /usr/arm-none-eabi/include/sys/syslimits.h \
+ /home/Mark/Projects/Yin_Detection_On_Stm32/cmake/stm32cubemx/../../Drivers/CMSIS/Include/cmsis_compiler.h \
+ /home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Source/../Include/arm_math_memory.h \
+ /home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Source/../Include/dsp/none.h \
+ /home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Source/../Include/arm_math_types.h \
+ /home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Source/../Include/dsp/utils.h \
+ /home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Source/../Include/dsp/basic_math_functions.h \
+ /home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Source/../Include/arm_math_memory.h \
+ /home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Source/../Include/dsp/none.h \
+ /home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Source/../Include/dsp/utils.h \
+ /home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Source/../Include/dsp/interpolation_functions.h \
+ /home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Source/../Include/dsp/bayes_functions.h \
+ /home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Source/../Include/dsp/statistics_functions.h \
+ /home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Source/../Include/dsp/basic_math_functions.h \
+ /home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Source/../Include/dsp/fast_math_functions.h \
+ /home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Source/../Include/dsp/matrix_functions.h \
+ /home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Source/../Include/dsp/complex_math_functions.h \
+ /home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Source/../Include/dsp/statistics_functions.h \
+ /home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Source/../Include/dsp/controller_functions.h \
+ /home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Source/../Include/dsp/support_functions.h \
+ /home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Source/../Include/dsp/distance_functions.h \
+ /home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Source/../Include/dsp/matrix_functions.h \
+ /home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Source/../Include/dsp/svm_functions.h \
+ /home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Source/../Include/dsp/svm_defines.h \
+ /home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Source/../Include/dsp/fast_math_functions.h \
+ /home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Source/../Include/dsp/transform_functions.h \
+ /home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Source/../Include/dsp/complex_math_functions.h \
+ /home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Source/../Include/dsp/filtering_functions.h \
+ /home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Source/../Include/dsp/support_functions.h \
+ /home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Source/../Include/dsp/quaternion_math_functions.h \
+ /home/Mark/Projects/Yin_Detection_On_Stm32/CMSIS-DSP/Source/../Include/dsp/window_functions.h \
+ /home/Mark/Projects/Yin_Detection_On_Stm32/cmake/stm32cubemx/../../Core/Inc/adc_test_signals.h
