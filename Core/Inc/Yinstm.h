@@ -124,14 +124,14 @@ void Yin_FFT(float* src, float* power, float* dest, uint16_t destSize, arm_rfft_
 	}
 	arm_rfft_fast_f32(fft_instance, power, dest, 1);
 	
-	for (int i = 0; i < destSize; i++)
-	{
-		dest[i] = (dest[0]*2) - (2*dest[i]);
-	}
+//	for (int i = 0; i < destSize; i++)
+//	{
+//		dest[i] = (dest[0]*2) - (2*dest[i]);
+//	}
 
-	dest[0] = 0.0;
+//	dest[0] = 0.0;
 }
-void adcToFloat(uint8_t* src, float* dest, uint16_t destSize){
+void adcToFloat(const uint8_t* src, float* dest, uint16_t destSize){
 	
 	for(int i = 0; i < destSize; i++){
 	dest[i]= (float)src[i];

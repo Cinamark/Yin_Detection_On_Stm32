@@ -123,7 +123,7 @@ int main(void)
 
   clearScreen(&hi2c1);
 
-//  arm_rfft_fast_init_f32 (&fft, 1024);
+  arm_rfft_fast_init_f32 (&fft, 1024);
     
 
   //set_pixel(64, 32, true, framebuffer);
@@ -139,13 +139,14 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-//    adcToFloat(adc_sine_220hz,inputF, W_SIZE);
-    Yin_Diff(adc_sine_220hz, destBuff);
-//    Yin_FFT(inputF, powerBuff, destBuff, W_SIZE, &fft);
+//  adcToFloat(adc_sine_220hz,inputF, W_SIZE);
+  Yin_Diff(adc_sine_220hz, destBuff);
+  //  Yin_FFT(inputF, powerBuff, destBuff, W_SIZE, &fft);
     Yin_CMNDF(destBuff);
-//    basicPitch = crude(destBuff, W_SIZE);
- basicPitch = Yin_AbsThresh(destBuff, threshold, &prob);
+  //basicPitch = crude(destBuff, W_SIZE);
+    basicPitch = Yin_AbsThresh(destBuff, threshold, &prob);
     interPitch = Yin_ParaInterp(destBuff, basicPitch);
+//    interPitch = 440.0f;
     //printPitch(framebuffer, sizeof(framebuffer), 440); 
     printPitch(framebuffer, sizeof(framebuffer), (float)ADC_TEST_FS_HZ/interPitch);
     update(framebuffer, sizeof(framebuffer), &hi2c1);
