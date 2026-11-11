@@ -97,6 +97,10 @@ The ultimate goal is to get real-time YIN pitch detection working on the STM32L4
 
 ---
 
+## Linux Setup
+
+If you also use Arch (btw), a clean setup of ARM gcc compilers will also be included here for ease of setup. Flashing to the microcontroller as well can be done STRAIGHT from the CLI which is pretty neat. A setup should be uploaded by the weekend, would be here now but I had a MATLAB assignment literally due TODAY. oooooo MATLAB scary
+
 ## Contributing
 
 If you'd like to contribute:
