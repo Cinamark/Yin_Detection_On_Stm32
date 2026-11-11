@@ -126,4 +126,4 @@ Different implementations and ideas are welcome!
 
 ---
 
-**Happy hacking, and let's get some pitch detection running!**
+
